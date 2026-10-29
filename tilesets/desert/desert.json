@@ -1,0 +1,799 @@
+{
+  "Kind": "rpg_tileset",
+  "Items": [
+    {
+      "Id": "desert",
+      "Image": "desert/objects",
+      "SurfaceImage": "desert/surfaces",
+      "SurfaceSize": 128,
+      "TileSize": 32,
+      "Columns": 16,
+      "Tiles": [
+        {
+          "Index": 100,
+          "AtlasIndex": 0,
+          "Solid": false,
+          "Tag": "adobe_0_0"
+        },
+        {
+          "Index": 101,
+          "AtlasIndex": 1,
+          "Solid": false,
+          "Tag": "adobe_1_0"
+        },
+        {
+          "Index": 102,
+          "AtlasIndex": 2,
+          "Solid": false,
+          "Tag": "adobe_2_0"
+        },
+        {
+          "Index": 103,
+          "AtlasIndex": 3,
+          "Solid": false,
+          "Tag": "adobe_3_0"
+        },
+        {
+          "Index": 104,
+          "AtlasIndex": 4,
+          "Solid": false,
+          "Tag": "adobe_4_0"
+        },
+        {
+          "Index": 105,
+          "AtlasIndex": 5,
+          "Solid": false,
+          "Tag": "adobe_5_0"
+        },
+        {
+          "Index": 106,
+          "AtlasIndex": 16,
+          "Solid": false,
+          "Tag": "adobe_0_1"
+        },
+        {
+          "Index": 107,
+          "AtlasIndex": 17,
+          "Solid": false,
+          "Tag": "adobe_1_1"
+        },
+        {
+          "Index": 108,
+          "AtlasIndex": 18,
+          "Solid": false,
+          "Tag": "adobe_2_1"
+        },
+        {
+          "Index": 109,
+          "AtlasIndex": 19,
+          "Solid": false,
+          "Tag": "adobe_3_1"
+        },
+        {
+          "Index": 110,
+          "AtlasIndex": 20,
+          "Solid": false,
+          "Tag": "adobe_4_1"
+        },
+        {
+          "Index": 111,
+          "AtlasIndex": 21,
+          "Solid": false,
+          "Tag": "adobe_5_1"
+        },
+        {
+          "Index": 112,
+          "AtlasIndex": 32,
+          "Solid": false,
+          "Tag": "adobe_0_2"
+        },
+        {
+          "Index": 113,
+          "AtlasIndex": 33,
+          "Solid": false,
+          "Tag": "adobe_1_2"
+        },
+        {
+          "Index": 114,
+          "AtlasIndex": 34,
+          "Solid": false,
+          "Tag": "adobe_2_2"
+        },
+        {
+          "Index": 115,
+          "AtlasIndex": 35,
+          "Solid": false,
+          "Tag": "adobe_3_2"
+        },
+        {
+          "Index": 116,
+          "AtlasIndex": 36,
+          "Solid": false,
+          "Tag": "adobe_4_2"
+        },
+        {
+          "Index": 117,
+          "AtlasIndex": 37,
+          "Solid": false,
+          "Tag": "adobe_5_2"
+        },
+        {
+          "Index": 118,
+          "AtlasIndex": 48,
+          "Solid": false,
+          "Tag": "adobe_0_3"
+        },
+        {
+          "Index": 119,
+          "AtlasIndex": 49,
+          "Solid": false,
+          "Tag": "adobe_1_3"
+        },
+        {
+          "Index": 120,
+          "AtlasIndex": 50,
+          "Solid": false,
+          "Tag": "adobe_2_3"
+        },
+        {
+          "Index": 121,
+          "AtlasIndex": 51,
+          "Solid": false,
+          "Tag": "adobe_3_3"
+        },
+        {
+          "Index": 122,
+          "AtlasIndex": 52,
+          "Solid": false,
+          "Tag": "adobe_4_3"
+        },
+        {
+          "Index": 123,
+          "AtlasIndex": 53,
+          "Solid": false,
+          "Tag": "adobe_5_3"
+        },
+        {
+          "Index": 124,
+          "AtlasIndex": 64,
+          "Solid": true,
+          "Tag": "adobe_0_4"
+        },
+        {
+          "Index": 125,
+          "AtlasIndex": 65,
+          "Solid": true,
+          "Tag": "adobe_1_4"
+        },
+        {
+          "Index": 126,
+          "AtlasIndex": 66,
+          "Solid": true,
+          "Tag": "adobe_2_4"
+        },
+        {
+          "Index": 127,
+          "AtlasIndex": 67,
+          "Solid": true,
+          "Tag": "adobe_3_4"
+        },
+        {
+          "Index": 128,
+          "AtlasIndex": 68,
+          "Solid": true,
+          "Tag": "adobe_4_4"
+        },
+        {
+          "Index": 129,
+          "AtlasIndex": 69,
+          "Solid": true,
+          "Tag": "adobe_5_4"
+        },
+        {
+          "Index": 140,
+          "AtlasIndex": 6,
+          "Solid": false,
+          "Tag": "caravan_0_0"
+        },
+        {
+          "Index": 141,
+          "AtlasIndex": 7,
+          "Solid": false,
+          "Tag": "caravan_1_0"
+        },
+        {
+          "Index": 142,
+          "AtlasIndex": 8,
+          "Solid": false,
+          "Tag": "caravan_2_0"
+        },
+        {
+          "Index": 143,
+          "AtlasIndex": 9,
+          "Solid": false,
+          "Tag": "caravan_3_0"
+        },
+        {
+          "Index": 144,
+          "AtlasIndex": 10,
+          "Solid": false,
+          "Tag": "caravan_4_0"
+        },
+        {
+          "Index": 145,
+          "AtlasIndex": 11,
+          "Solid": false,
+          "Tag": "caravan_5_0"
+        },
+        {
+          "Index": 146,
+          "AtlasIndex": 22,
+          "Solid": false,
+          "Tag": "caravan_0_1"
+        },
+        {
+          "Index": 147,
+          "AtlasIndex": 23,
+          "Solid": false,
+          "Tag": "caravan_1_1"
+        },
+        {
+          "Index": 148,
+          "AtlasIndex": 24,
+          "Solid": false,
+          "Tag": "caravan_2_1"
+        },
+        {
+          "Index": 149,
+          "AtlasIndex": 25,
+          "Solid": false,
+          "Tag": "caravan_3_1"
+        },
+        {
+          "Index": 150,
+          "AtlasIndex": 26,
+          "Solid": false,
+          "Tag": "caravan_4_1"
+        },
+        {
+          "Index": 151,
+          "AtlasIndex": 27,
+          "Solid": false,
+          "Tag": "caravan_5_1"
+        },
+        {
+          "Index": 152,
+          "AtlasIndex": 38,
+          "Solid": false,
+          "Tag": "caravan_0_2"
+        },
+        {
+          "Index": 153,
+          "AtlasIndex": 39,
+          "Solid": false,
+          "Tag": "caravan_1_2"
+        },
+        {
+          "Index": 154,
+          "AtlasIndex": 40,
+          "Solid": false,
+          "Tag": "caravan_2_2"
+        },
+        {
+          "Index": 155,
+          "AtlasIndex": 41,
+          "Solid": false,
+          "Tag": "caravan_3_2"
+        },
+        {
+          "Index": 156,
+          "AtlasIndex": 42,
+          "Solid": false,
+          "Tag": "caravan_4_2"
+        },
+        {
+          "Index": 157,
+          "AtlasIndex": 43,
+          "Solid": false,
+          "Tag": "caravan_5_2"
+        },
+        {
+          "Index": 158,
+          "AtlasIndex": 54,
+          "Solid": false,
+          "Tag": "caravan_0_3"
+        },
+        {
+          "Index": 159,
+          "AtlasIndex": 55,
+          "Solid": false,
+          "Tag": "caravan_1_3"
+        },
+        {
+          "Index": 160,
+          "AtlasIndex": 56,
+          "Solid": false,
+          "Tag": "caravan_2_3"
+        },
+        {
+          "Index": 161,
+          "AtlasIndex": 57,
+          "Solid": false,
+          "Tag": "caravan_3_3"
+        },
+        {
+          "Index": 162,
+          "AtlasIndex": 58,
+          "Solid": false,
+          "Tag": "caravan_4_3"
+        },
+        {
+          "Index": 163,
+          "AtlasIndex": 59,
+          "Solid": false,
+          "Tag": "caravan_5_3"
+        },
+        {
+          "Index": 164,
+          "AtlasIndex": 70,
+          "Solid": true,
+          "Tag": "caravan_0_4"
+        },
+        {
+          "Index": 165,
+          "AtlasIndex": 71,
+          "Solid": true,
+          "Tag": "caravan_1_4"
+        },
+        {
+          "Index": 166,
+          "AtlasIndex": 72,
+          "Solid": true,
+          "Tag": "caravan_2_4"
+        },
+        {
+          "Index": 167,
+          "AtlasIndex": 73,
+          "Solid": true,
+          "Tag": "caravan_3_4"
+        },
+        {
+          "Index": 168,
+          "AtlasIndex": 74,
+          "Solid": true,
+          "Tag": "caravan_4_4"
+        },
+        {
+          "Index": 169,
+          "AtlasIndex": 75,
+          "Solid": true,
+          "Tag": "caravan_5_4"
+        },
+        {
+          "Index": 180,
+          "AtlasIndex": 12,
+          "Solid": false,
+          "Tag": "tower_0_0"
+        },
+        {
+          "Index": 181,
+          "AtlasIndex": 13,
+          "Solid": false,
+          "Tag": "tower_1_0"
+        },
+        {
+          "Index": 182,
+          "AtlasIndex": 14,
+          "Solid": false,
+          "Tag": "tower_2_0"
+        },
+        {
+          "Index": 183,
+          "AtlasIndex": 15,
+          "Solid": false,
+          "Tag": "tower_3_0"
+        },
+        {
+          "Index": 184,
+          "AtlasIndex": 28,
+          "Solid": false,
+          "Tag": "tower_0_1"
+        },
+        {
+          "Index": 185,
+          "AtlasIndex": 29,
+          "Solid": false,
+          "Tag": "tower_1_1"
+        },
+        {
+          "Index": 186,
+          "AtlasIndex": 30,
+          "Solid": false,
+          "Tag": "tower_2_1"
+        },
+        {
+          "Index": 187,
+          "AtlasIndex": 31,
+          "Solid": false,
+          "Tag": "tower_3_1"
+        },
+        {
+          "Index": 188,
+          "AtlasIndex": 44,
+          "Solid": false,
+          "Tag": "tower_0_2"
+        },
+        {
+          "Index": 189,
+          "AtlasIndex": 45,
+          "Solid": false,
+          "Tag": "tower_1_2"
+        },
+        {
+          "Index": 190,
+          "AtlasIndex": 46,
+          "Solid": false,
+          "Tag": "tower_2_2"
+        },
+        {
+          "Index": 191,
+          "AtlasIndex": 47,
+          "Solid": false,
+          "Tag": "tower_3_2"
+        },
+        {
+          "Index": 192,
+          "AtlasIndex": 60,
+          "Solid": false,
+          "Tag": "tower_0_3"
+        },
+        {
+          "Index": 193,
+          "AtlasIndex": 61,
+          "Solid": false,
+          "Tag": "tower_1_3"
+        },
+        {
+          "Index": 194,
+          "AtlasIndex": 62,
+          "Solid": false,
+          "Tag": "tower_2_3"
+        },
+        {
+          "Index": 195,
+          "AtlasIndex": 63,
+          "Solid": false,
+          "Tag": "tower_3_3"
+        },
+        {
+          "Index": 196,
+          "AtlasIndex": 76,
+          "Solid": true,
+          "Tag": "tower_0_4"
+        },
+        {
+          "Index": 197,
+          "AtlasIndex": 77,
+          "Solid": true,
+          "Tag": "tower_1_4"
+        },
+        {
+          "Index": 198,
+          "AtlasIndex": 78,
+          "Solid": true,
+          "Tag": "tower_2_4"
+        },
+        {
+          "Index": 199,
+          "AtlasIndex": 79,
+          "Solid": true,
+          "Tag": "tower_3_4"
+        },
+        {
+          "Index": 220,
+          "AtlasIndex": 80,
+          "Solid": false,
+          "Tag": "palm_0_0"
+        },
+        {
+          "Index": 221,
+          "AtlasIndex": 81,
+          "Solid": false,
+          "Tag": "palm_1_0"
+        },
+        {
+          "Index": 222,
+          "AtlasIndex": 82,
+          "Solid": false,
+          "Tag": "palm_2_0"
+        },
+        {
+          "Index": 223,
+          "AtlasIndex": 96,
+          "Solid": false,
+          "Tag": "palm_0_1"
+        },
+        {
+          "Index": 224,
+          "AtlasIndex": 97,
+          "Solid": false,
+          "Tag": "palm_1_1"
+        },
+        {
+          "Index": 225,
+          "AtlasIndex": 98,
+          "Solid": false,
+          "Tag": "palm_2_1"
+        },
+        {
+          "Index": 226,
+          "AtlasIndex": 112,
+          "Solid": false,
+          "Tag": "palm_0_2"
+        },
+        {
+          "Index": 227,
+          "AtlasIndex": 113,
+          "Solid": false,
+          "Tag": "palm_1_2"
+        },
+        {
+          "Index": 228,
+          "AtlasIndex": 114,
+          "Solid": false,
+          "Tag": "palm_2_2"
+        },
+        {
+          "Index": 229,
+          "AtlasIndex": 128,
+          "Solid": true,
+          "Tag": "palm_0_3"
+        },
+        {
+          "Index": 230,
+          "AtlasIndex": 129,
+          "Solid": true,
+          "Tag": "palm_1_3"
+        },
+        {
+          "Index": 231,
+          "AtlasIndex": 130,
+          "Solid": true,
+          "Tag": "palm_2_3"
+        },
+        {
+          "Index": 240,
+          "AtlasIndex": 83,
+          "Solid": false,
+          "Tag": "cactus_0_0"
+        },
+        {
+          "Index": 241,
+          "AtlasIndex": 84,
+          "Solid": false,
+          "Tag": "cactus_1_0"
+        },
+        {
+          "Index": 242,
+          "AtlasIndex": 99,
+          "Solid": false,
+          "Tag": "cactus_0_1"
+        },
+        {
+          "Index": 243,
+          "AtlasIndex": 100,
+          "Solid": false,
+          "Tag": "cactus_1_1"
+        },
+        {
+          "Index": 244,
+          "AtlasIndex": 115,
+          "Solid": true,
+          "Tag": "cactus_0_2"
+        },
+        {
+          "Index": 245,
+          "AtlasIndex": 116,
+          "Solid": true,
+          "Tag": "cactus_1_2"
+        },
+        {
+          "Index": 250,
+          "AtlasIndex": 85,
+          "Solid": false,
+          "Tag": "scrub_0_0"
+        },
+        {
+          "Index": 251,
+          "AtlasIndex": 86,
+          "Solid": false,
+          "Tag": "scrub_1_0"
+        },
+        {
+          "Index": 252,
+          "AtlasIndex": 101,
+          "Solid": true,
+          "Tag": "scrub_0_1"
+        },
+        {
+          "Index": 253,
+          "AtlasIndex": 102,
+          "Solid": true,
+          "Tag": "scrub_1_1"
+        },
+        {
+          "Index": 0,
+          "Solid": false,
+          "Surface": 0,
+          "Diffuse": true,
+          "Tag": "desert_sand"
+        },
+        {
+          "Index": 1,
+          "Solid": false,
+          "Surface": 1,
+          "Diffuse": true,
+          "Tag": "rocky_ground"
+        }
+      ],
+      "VisualGroups": [
+        {
+          "Id": "adobe",
+          "Width": 6,
+          "Height": 5,
+          "Pattern": [
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129
+          ],
+          "AnchorX": 3,
+          "AnchorY": 5
+        },
+        {
+          "Id": "caravan",
+          "Width": 6,
+          "Height": 5,
+          "Pattern": [
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ],
+          "AnchorX": 3,
+          "AnchorY": 5
+        },
+        {
+          "Id": "tower",
+          "Width": 4,
+          "Height": 5,
+          "Pattern": [
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ],
+          "AnchorX": 2,
+          "AnchorY": 5
+        },
+        {
+          "Id": "palm",
+          "Width": 3,
+          "Height": 4,
+          "Pattern": [
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231
+          ],
+          "AnchorX": 1.5,
+          "AnchorY": 4
+        },
+        {
+          "Id": "cactus",
+          "Width": 2,
+          "Height": 3,
+          "Pattern": [
+            240,
+            241,
+            242,
+            243,
+            244,
+            245
+          ],
+          "AnchorX": 1,
+          "AnchorY": 3
+        },
+        {
+          "Id": "scrub",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            250,
+            251,
+            252,
+            253
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        }
+      ]
+    }
+  ]
+}

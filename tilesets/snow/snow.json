@@ -1,0 +1,770 @@
+{
+  "Kind": "rpg_tileset",
+  "Items": [
+    {
+      "Id": "snow",
+      "Image": "snow/objects",
+      "SurfaceImage": "snow/surfaces",
+      "SurfaceSize": 128,
+      "TileSize": 32,
+      "Columns": 16,
+      "Tiles": [
+        {
+          "Index": 100,
+          "AtlasIndex": 0,
+          "Solid": false,
+          "Tag": "cabin_0_0"
+        },
+        {
+          "Index": 101,
+          "AtlasIndex": 1,
+          "Solid": false,
+          "Tag": "cabin_1_0"
+        },
+        {
+          "Index": 102,
+          "AtlasIndex": 2,
+          "Solid": false,
+          "Tag": "cabin_2_0"
+        },
+        {
+          "Index": 103,
+          "AtlasIndex": 3,
+          "Solid": false,
+          "Tag": "cabin_3_0"
+        },
+        {
+          "Index": 104,
+          "AtlasIndex": 4,
+          "Solid": false,
+          "Tag": "cabin_4_0"
+        },
+        {
+          "Index": 105,
+          "AtlasIndex": 5,
+          "Solid": false,
+          "Tag": "cabin_5_0"
+        },
+        {
+          "Index": 106,
+          "AtlasIndex": 16,
+          "Solid": false,
+          "Tag": "cabin_0_1"
+        },
+        {
+          "Index": 107,
+          "AtlasIndex": 17,
+          "Solid": false,
+          "Tag": "cabin_1_1"
+        },
+        {
+          "Index": 108,
+          "AtlasIndex": 18,
+          "Solid": false,
+          "Tag": "cabin_2_1"
+        },
+        {
+          "Index": 109,
+          "AtlasIndex": 19,
+          "Solid": false,
+          "Tag": "cabin_3_1"
+        },
+        {
+          "Index": 110,
+          "AtlasIndex": 20,
+          "Solid": false,
+          "Tag": "cabin_4_1"
+        },
+        {
+          "Index": 111,
+          "AtlasIndex": 21,
+          "Solid": false,
+          "Tag": "cabin_5_1"
+        },
+        {
+          "Index": 112,
+          "AtlasIndex": 32,
+          "Solid": false,
+          "Tag": "cabin_0_2"
+        },
+        {
+          "Index": 113,
+          "AtlasIndex": 33,
+          "Solid": false,
+          "Tag": "cabin_1_2"
+        },
+        {
+          "Index": 114,
+          "AtlasIndex": 34,
+          "Solid": false,
+          "Tag": "cabin_2_2"
+        },
+        {
+          "Index": 115,
+          "AtlasIndex": 35,
+          "Solid": false,
+          "Tag": "cabin_3_2"
+        },
+        {
+          "Index": 116,
+          "AtlasIndex": 36,
+          "Solid": false,
+          "Tag": "cabin_4_2"
+        },
+        {
+          "Index": 117,
+          "AtlasIndex": 37,
+          "Solid": false,
+          "Tag": "cabin_5_2"
+        },
+        {
+          "Index": 118,
+          "AtlasIndex": 48,
+          "Solid": false,
+          "Tag": "cabin_0_3"
+        },
+        {
+          "Index": 119,
+          "AtlasIndex": 49,
+          "Solid": false,
+          "Tag": "cabin_1_3"
+        },
+        {
+          "Index": 120,
+          "AtlasIndex": 50,
+          "Solid": false,
+          "Tag": "cabin_2_3"
+        },
+        {
+          "Index": 121,
+          "AtlasIndex": 51,
+          "Solid": false,
+          "Tag": "cabin_3_3"
+        },
+        {
+          "Index": 122,
+          "AtlasIndex": 52,
+          "Solid": false,
+          "Tag": "cabin_4_3"
+        },
+        {
+          "Index": 123,
+          "AtlasIndex": 53,
+          "Solid": false,
+          "Tag": "cabin_5_3"
+        },
+        {
+          "Index": 124,
+          "AtlasIndex": 64,
+          "Solid": true,
+          "Tag": "cabin_0_4"
+        },
+        {
+          "Index": 125,
+          "AtlasIndex": 65,
+          "Solid": true,
+          "Tag": "cabin_1_4"
+        },
+        {
+          "Index": 126,
+          "AtlasIndex": 66,
+          "Solid": true,
+          "Tag": "cabin_2_4"
+        },
+        {
+          "Index": 127,
+          "AtlasIndex": 67,
+          "Solid": true,
+          "Tag": "cabin_3_4"
+        },
+        {
+          "Index": 128,
+          "AtlasIndex": 68,
+          "Solid": true,
+          "Tag": "cabin_4_4"
+        },
+        {
+          "Index": 129,
+          "AtlasIndex": 69,
+          "Solid": true,
+          "Tag": "cabin_5_4"
+        },
+        {
+          "Index": 140,
+          "AtlasIndex": 6,
+          "Solid": false,
+          "Tag": "spruce_0_0"
+        },
+        {
+          "Index": 141,
+          "AtlasIndex": 7,
+          "Solid": false,
+          "Tag": "spruce_1_0"
+        },
+        {
+          "Index": 142,
+          "AtlasIndex": 8,
+          "Solid": false,
+          "Tag": "spruce_2_0"
+        },
+        {
+          "Index": 143,
+          "AtlasIndex": 22,
+          "Solid": false,
+          "Tag": "spruce_0_1"
+        },
+        {
+          "Index": 144,
+          "AtlasIndex": 23,
+          "Solid": false,
+          "Tag": "spruce_1_1"
+        },
+        {
+          "Index": 145,
+          "AtlasIndex": 24,
+          "Solid": false,
+          "Tag": "spruce_2_1"
+        },
+        {
+          "Index": 146,
+          "AtlasIndex": 38,
+          "Solid": false,
+          "Tag": "spruce_0_2"
+        },
+        {
+          "Index": 147,
+          "AtlasIndex": 39,
+          "Solid": false,
+          "Tag": "spruce_1_2"
+        },
+        {
+          "Index": 148,
+          "AtlasIndex": 40,
+          "Solid": false,
+          "Tag": "spruce_2_2"
+        },
+        {
+          "Index": 149,
+          "AtlasIndex": 54,
+          "Solid": true,
+          "Tag": "spruce_0_3"
+        },
+        {
+          "Index": 150,
+          "AtlasIndex": 55,
+          "Solid": true,
+          "Tag": "spruce_1_3"
+        },
+        {
+          "Index": 151,
+          "AtlasIndex": 56,
+          "Solid": true,
+          "Tag": "spruce_2_3"
+        },
+        {
+          "Index": 160,
+          "AtlasIndex": 9,
+          "Solid": false,
+          "Tag": "well_0_0"
+        },
+        {
+          "Index": 161,
+          "AtlasIndex": 10,
+          "Solid": false,
+          "Tag": "well_1_0"
+        },
+        {
+          "Index": 162,
+          "AtlasIndex": 25,
+          "Solid": false,
+          "Tag": "well_0_1"
+        },
+        {
+          "Index": 163,
+          "AtlasIndex": 26,
+          "Solid": false,
+          "Tag": "well_1_1"
+        },
+        {
+          "Index": 164,
+          "AtlasIndex": 41,
+          "Solid": true,
+          "Tag": "well_0_2"
+        },
+        {
+          "Index": 165,
+          "AtlasIndex": 42,
+          "Solid": true,
+          "Tag": "well_1_2"
+        },
+        {
+          "Index": 180,
+          "AtlasIndex": 11,
+          "Solid": false,
+          "Tag": "cart_0_0"
+        },
+        {
+          "Index": 181,
+          "AtlasIndex": 12,
+          "Solid": false,
+          "Tag": "cart_1_0"
+        },
+        {
+          "Index": 182,
+          "AtlasIndex": 13,
+          "Solid": false,
+          "Tag": "cart_2_0"
+        },
+        {
+          "Index": 183,
+          "AtlasIndex": 27,
+          "Solid": true,
+          "Tag": "cart_0_1"
+        },
+        {
+          "Index": 184,
+          "AtlasIndex": 28,
+          "Solid": true,
+          "Tag": "cart_1_1"
+        },
+        {
+          "Index": 185,
+          "AtlasIndex": 29,
+          "Solid": true,
+          "Tag": "cart_2_1"
+        },
+        {
+          "Index": 200,
+          "AtlasIndex": 80,
+          "Solid": false,
+          "Tag": "rocks_0_0"
+        },
+        {
+          "Index": 201,
+          "AtlasIndex": 81,
+          "Solid": false,
+          "Tag": "rocks_1_0"
+        },
+        {
+          "Index": 202,
+          "AtlasIndex": 96,
+          "Solid": true,
+          "Tag": "rocks_0_1"
+        },
+        {
+          "Index": 203,
+          "AtlasIndex": 97,
+          "Solid": true,
+          "Tag": "rocks_1_1"
+        },
+        {
+          "Index": 210,
+          "AtlasIndex": 82,
+          "Solid": false,
+          "Tag": "shrub_0_0"
+        },
+        {
+          "Index": 211,
+          "AtlasIndex": 83,
+          "Solid": false,
+          "Tag": "shrub_1_0"
+        },
+        {
+          "Index": 212,
+          "AtlasIndex": 98,
+          "Solid": true,
+          "Tag": "shrub_0_1"
+        },
+        {
+          "Index": 213,
+          "AtlasIndex": 99,
+          "Solid": true,
+          "Tag": "shrub_1_1"
+        },
+        {
+          "Index": 220,
+          "AtlasIndex": 84,
+          "Solid": false,
+          "Tag": "dead_tree_0_0"
+        },
+        {
+          "Index": 221,
+          "AtlasIndex": 85,
+          "Solid": false,
+          "Tag": "dead_tree_1_0"
+        },
+        {
+          "Index": 222,
+          "AtlasIndex": 100,
+          "Solid": false,
+          "Tag": "dead_tree_0_1"
+        },
+        {
+          "Index": 223,
+          "AtlasIndex": 101,
+          "Solid": false,
+          "Tag": "dead_tree_1_1"
+        },
+        {
+          "Index": 224,
+          "AtlasIndex": 116,
+          "Solid": true,
+          "Tag": "dead_tree_0_2"
+        },
+        {
+          "Index": 225,
+          "AtlasIndex": 117,
+          "Solid": true,
+          "Tag": "dead_tree_1_2"
+        },
+        {
+          "Index": 230,
+          "AtlasIndex": 86,
+          "Solid": false,
+          "Tag": "ice_crystal_0_0"
+        },
+        {
+          "Index": 231,
+          "AtlasIndex": 87,
+          "Solid": false,
+          "Tag": "ice_crystal_1_0"
+        },
+        {
+          "Index": 232,
+          "AtlasIndex": 102,
+          "Solid": true,
+          "Tag": "ice_crystal_0_1"
+        },
+        {
+          "Index": 233,
+          "AtlasIndex": 103,
+          "Solid": true,
+          "Tag": "ice_crystal_1_1"
+        },
+        {
+          "Index": 240,
+          "AtlasIndex": 90,
+          "Solid": true,
+          "Tag": "fence_0_0"
+        },
+        {
+          "Index": 241,
+          "AtlasIndex": 91,
+          "Solid": true,
+          "Tag": "fence_1_0"
+        },
+        {
+          "Index": 250,
+          "AtlasIndex": 92,
+          "Solid": false,
+          "Tag": "firewood_0_0"
+        },
+        {
+          "Index": 251,
+          "AtlasIndex": 93,
+          "Solid": false,
+          "Tag": "firewood_1_0"
+        },
+        {
+          "Index": 252,
+          "AtlasIndex": 108,
+          "Solid": true,
+          "Tag": "firewood_0_1"
+        },
+        {
+          "Index": 253,
+          "AtlasIndex": 109,
+          "Solid": true,
+          "Tag": "firewood_1_1"
+        },
+        {
+          "Index": 260,
+          "AtlasIndex": 94,
+          "Solid": false,
+          "Tag": "snowdrift_0_0"
+        },
+        {
+          "Index": 261,
+          "AtlasIndex": 95,
+          "Solid": false,
+          "Tag": "snowdrift_1_0"
+        },
+        {
+          "Index": 270,
+          "AtlasIndex": 106,
+          "Solid": false,
+          "Tag": "lamp_0_0",
+          "Light": {
+            "Radius": 4,
+            "Color": "#ffcf80"
+          }
+        },
+        {
+          "Index": 271,
+          "AtlasIndex": 122,
+          "Solid": true,
+          "Tag": "lamp_0_1"
+        },
+        {
+          "Index": 280,
+          "AtlasIndex": 107,
+          "Solid": false,
+          "Tag": "signpost_0_0"
+        },
+        {
+          "Index": 281,
+          "AtlasIndex": 123,
+          "Solid": true,
+          "Tag": "signpost_0_1"
+        },
+        {
+          "Index": 290,
+          "AtlasIndex": 110,
+          "Solid": true,
+          "Tag": "barrel_0_0"
+        },
+        {
+          "Index": 0,
+          "Solid": false,
+          "Surface": 0,
+          "Diffuse": true,
+          "Tag": "snow_cover"
+        },
+        {
+          "Index": 1,
+          "Solid": false,
+          "Surface": 1,
+          "Diffuse": true,
+          "Tag": "ice"
+        },
+        {
+          "Index": 2,
+          "Solid": false,
+          "Surface": 2,
+          "Diffuse": true,
+          "Tag": "packed_snow"
+        },
+        {
+          "Index": 3,
+          "Solid": false,
+          "Surface": 3,
+          "Diffuse": true,
+          "Tag": "trampled_snow"
+        }
+      ],
+      "VisualGroups": [
+        {
+          "Id": "cabin",
+          "Width": 6,
+          "Height": 5,
+          "Pattern": [
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129
+          ],
+          "AnchorX": 3,
+          "AnchorY": 5
+        },
+        {
+          "Id": "spruce",
+          "Width": 3,
+          "Height": 4,
+          "Pattern": [
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151
+          ],
+          "AnchorX": 1.5,
+          "AnchorY": 4
+        },
+        {
+          "Id": "well",
+          "Width": 2,
+          "Height": 3,
+          "Pattern": [
+            160,
+            161,
+            162,
+            163,
+            164,
+            165
+          ],
+          "AnchorX": 1,
+          "AnchorY": 3
+        },
+        {
+          "Id": "cart",
+          "Width": 3,
+          "Height": 2,
+          "Pattern": [
+            180,
+            181,
+            182,
+            183,
+            184,
+            185
+          ],
+          "AnchorX": 1.5,
+          "AnchorY": 2
+        },
+        {
+          "Id": "rocks",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            200,
+            201,
+            202,
+            203
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "shrub",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            210,
+            211,
+            212,
+            213
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "dead_tree",
+          "Width": 2,
+          "Height": 3,
+          "Pattern": [
+            220,
+            221,
+            222,
+            223,
+            224,
+            225
+          ],
+          "AnchorX": 1,
+          "AnchorY": 3
+        },
+        {
+          "Id": "ice_crystal",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            230,
+            231,
+            232,
+            233
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "fence",
+          "Width": 2,
+          "Height": 1,
+          "Pattern": [
+            240,
+            241
+          ],
+          "AnchorX": 1,
+          "AnchorY": 1
+        },
+        {
+          "Id": "firewood",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            250,
+            251,
+            252,
+            253
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "snowdrift",
+          "Width": 2,
+          "Height": 1,
+          "Pattern": [
+            260,
+            261
+          ],
+          "AnchorX": 1,
+          "AnchorY": 1
+        },
+        {
+          "Id": "lamp",
+          "Width": 1,
+          "Height": 2,
+          "Pattern": [
+            270,
+            271
+          ],
+          "AnchorX": 0.5,
+          "AnchorY": 2
+        },
+        {
+          "Id": "signpost",
+          "Width": 1,
+          "Height": 2,
+          "Pattern": [
+            280,
+            281
+          ],
+          "AnchorX": 0.5,
+          "AnchorY": 2
+        },
+        {
+          "Id": "barrel",
+          "Width": 1,
+          "Height": 1,
+          "Pattern": [
+            290
+          ],
+          "AnchorX": 0.5,
+          "AnchorY": 1
+        }
+      ]
+    }
+  ]
+}

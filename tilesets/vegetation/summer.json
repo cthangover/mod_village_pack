@@ -1,0 +1,963 @@
+{
+  "Kind": "rpg_tileset",
+  "Items": [
+    {
+      "Id": "vegetation_summer",
+      "Image": "vegetation/summer",
+      "TileSize": 32,
+      "Columns": 12,
+      "Tiles": [
+        {
+          "Index": 0,
+          "AtlasIndex": 0,
+          "Solid": false,
+          "Tag": "oak_0_0"
+        },
+        {
+          "Index": 1,
+          "AtlasIndex": 1,
+          "Solid": false,
+          "Tag": "oak_1_0"
+        },
+        {
+          "Index": 2,
+          "AtlasIndex": 2,
+          "Solid": false,
+          "Tag": "oak_2_0"
+        },
+        {
+          "Index": 3,
+          "AtlasIndex": 3,
+          "Solid": false,
+          "Tag": "oak_3_0"
+        },
+        {
+          "Index": 4,
+          "AtlasIndex": 4,
+          "Solid": false,
+          "Tag": "spruce_0_0"
+        },
+        {
+          "Index": 5,
+          "AtlasIndex": 5,
+          "Solid": false,
+          "Tag": "spruce_1_0"
+        },
+        {
+          "Index": 6,
+          "AtlasIndex": 6,
+          "Solid": false,
+          "Tag": "spruce_2_0"
+        },
+        {
+          "Index": 7,
+          "AtlasIndex": 7,
+          "Solid": false,
+          "Tag": "spruce_3_0"
+        },
+        {
+          "Index": 8,
+          "AtlasIndex": 8,
+          "Solid": false,
+          "Tag": "birch_0_0"
+        },
+        {
+          "Index": 9,
+          "AtlasIndex": 9,
+          "Solid": false,
+          "Tag": "birch_1_0"
+        },
+        {
+          "Index": 10,
+          "AtlasIndex": 10,
+          "Solid": false,
+          "Tag": "birch_2_0"
+        },
+        {
+          "Index": 11,
+          "AtlasIndex": 11,
+          "Solid": false,
+          "Tag": "birch_3_0"
+        },
+        {
+          "Index": 12,
+          "AtlasIndex": 12,
+          "Solid": false,
+          "Tag": "oak_0_1"
+        },
+        {
+          "Index": 13,
+          "AtlasIndex": 13,
+          "Solid": false,
+          "Tag": "oak_1_1"
+        },
+        {
+          "Index": 14,
+          "AtlasIndex": 14,
+          "Solid": false,
+          "Tag": "oak_2_1"
+        },
+        {
+          "Index": 15,
+          "AtlasIndex": 15,
+          "Solid": false,
+          "Tag": "oak_3_1"
+        },
+        {
+          "Index": 16,
+          "AtlasIndex": 16,
+          "Solid": false,
+          "Tag": "spruce_0_1"
+        },
+        {
+          "Index": 17,
+          "AtlasIndex": 17,
+          "Solid": false,
+          "Tag": "spruce_1_1"
+        },
+        {
+          "Index": 18,
+          "AtlasIndex": 18,
+          "Solid": false,
+          "Tag": "spruce_2_1"
+        },
+        {
+          "Index": 19,
+          "AtlasIndex": 19,
+          "Solid": false,
+          "Tag": "spruce_3_1"
+        },
+        {
+          "Index": 20,
+          "AtlasIndex": 20,
+          "Solid": false,
+          "Tag": "birch_0_1"
+        },
+        {
+          "Index": 21,
+          "AtlasIndex": 21,
+          "Solid": false,
+          "Tag": "birch_1_1"
+        },
+        {
+          "Index": 22,
+          "AtlasIndex": 22,
+          "Solid": false,
+          "Tag": "birch_2_1"
+        },
+        {
+          "Index": 23,
+          "AtlasIndex": 23,
+          "Solid": false,
+          "Tag": "birch_3_1"
+        },
+        {
+          "Index": 24,
+          "AtlasIndex": 24,
+          "Solid": false,
+          "Tag": "oak_0_2"
+        },
+        {
+          "Index": 25,
+          "AtlasIndex": 25,
+          "Solid": false,
+          "Tag": "oak_1_2"
+        },
+        {
+          "Index": 26,
+          "AtlasIndex": 26,
+          "Solid": false,
+          "Tag": "oak_2_2"
+        },
+        {
+          "Index": 27,
+          "AtlasIndex": 27,
+          "Solid": false,
+          "Tag": "oak_3_2"
+        },
+        {
+          "Index": 28,
+          "AtlasIndex": 28,
+          "Solid": false,
+          "Tag": "spruce_0_2"
+        },
+        {
+          "Index": 29,
+          "AtlasIndex": 29,
+          "Solid": false,
+          "Tag": "spruce_1_2"
+        },
+        {
+          "Index": 30,
+          "AtlasIndex": 30,
+          "Solid": false,
+          "Tag": "spruce_2_2"
+        },
+        {
+          "Index": 31,
+          "AtlasIndex": 31,
+          "Solid": false,
+          "Tag": "spruce_3_2"
+        },
+        {
+          "Index": 32,
+          "AtlasIndex": 32,
+          "Solid": false,
+          "Tag": "birch_0_2"
+        },
+        {
+          "Index": 33,
+          "AtlasIndex": 33,
+          "Solid": false,
+          "Tag": "birch_1_2"
+        },
+        {
+          "Index": 34,
+          "AtlasIndex": 34,
+          "Solid": false,
+          "Tag": "birch_2_2"
+        },
+        {
+          "Index": 35,
+          "AtlasIndex": 35,
+          "Solid": false,
+          "Tag": "birch_3_2"
+        },
+        {
+          "Index": 36,
+          "AtlasIndex": 36,
+          "Solid": false,
+          "Tag": "oak_0_3"
+        },
+        {
+          "Index": 37,
+          "AtlasIndex": 37,
+          "Solid": true,
+          "Tag": "oak_1_3"
+        },
+        {
+          "Index": 38,
+          "AtlasIndex": 38,
+          "Solid": true,
+          "Tag": "oak_2_3"
+        },
+        {
+          "Index": 39,
+          "AtlasIndex": 39,
+          "Solid": false,
+          "Tag": "oak_3_3"
+        },
+        {
+          "Index": 40,
+          "AtlasIndex": 40,
+          "Solid": false,
+          "Tag": "spruce_0_3"
+        },
+        {
+          "Index": 41,
+          "AtlasIndex": 41,
+          "Solid": true,
+          "Tag": "spruce_1_3"
+        },
+        {
+          "Index": 42,
+          "AtlasIndex": 42,
+          "Solid": true,
+          "Tag": "spruce_2_3"
+        },
+        {
+          "Index": 43,
+          "AtlasIndex": 43,
+          "Solid": false,
+          "Tag": "spruce_3_3"
+        },
+        {
+          "Index": 44,
+          "AtlasIndex": 44,
+          "Solid": false,
+          "Tag": "birch_0_3"
+        },
+        {
+          "Index": 45,
+          "AtlasIndex": 45,
+          "Solid": true,
+          "Tag": "birch_1_3"
+        },
+        {
+          "Index": 46,
+          "AtlasIndex": 46,
+          "Solid": true,
+          "Tag": "birch_2_3"
+        },
+        {
+          "Index": 47,
+          "AtlasIndex": 47,
+          "Solid": false,
+          "Tag": "birch_3_3"
+        },
+        {
+          "Index": 48,
+          "AtlasIndex": 48,
+          "Solid": false,
+          "Tag": "willow_0_0"
+        },
+        {
+          "Index": 49,
+          "AtlasIndex": 49,
+          "Solid": false,
+          "Tag": "willow_1_0"
+        },
+        {
+          "Index": 50,
+          "AtlasIndex": 50,
+          "Solid": false,
+          "Tag": "willow_2_0"
+        },
+        {
+          "Index": 51,
+          "AtlasIndex": 51,
+          "Solid": false,
+          "Tag": "willow_3_0"
+        },
+        {
+          "Index": 52,
+          "AtlasIndex": 52,
+          "Solid": false,
+          "Tag": "maple_0_0"
+        },
+        {
+          "Index": 53,
+          "AtlasIndex": 53,
+          "Solid": false,
+          "Tag": "maple_1_0"
+        },
+        {
+          "Index": 54,
+          "AtlasIndex": 54,
+          "Solid": false,
+          "Tag": "maple_2_0"
+        },
+        {
+          "Index": 55,
+          "AtlasIndex": 55,
+          "Solid": false,
+          "Tag": "maple_3_0"
+        },
+        {
+          "Index": 56,
+          "AtlasIndex": 56,
+          "Solid": false,
+          "Tag": "pine_0_0"
+        },
+        {
+          "Index": 57,
+          "AtlasIndex": 57,
+          "Solid": false,
+          "Tag": "pine_1_0"
+        },
+        {
+          "Index": 58,
+          "AtlasIndex": 58,
+          "Solid": false,
+          "Tag": "pine_2_0"
+        },
+        {
+          "Index": 59,
+          "AtlasIndex": 59,
+          "Solid": false,
+          "Tag": "pine_3_0"
+        },
+        {
+          "Index": 60,
+          "AtlasIndex": 60,
+          "Solid": false,
+          "Tag": "willow_0_1"
+        },
+        {
+          "Index": 61,
+          "AtlasIndex": 61,
+          "Solid": false,
+          "Tag": "willow_1_1"
+        },
+        {
+          "Index": 62,
+          "AtlasIndex": 62,
+          "Solid": false,
+          "Tag": "willow_2_1"
+        },
+        {
+          "Index": 63,
+          "AtlasIndex": 63,
+          "Solid": false,
+          "Tag": "willow_3_1"
+        },
+        {
+          "Index": 64,
+          "AtlasIndex": 64,
+          "Solid": false,
+          "Tag": "maple_0_1"
+        },
+        {
+          "Index": 65,
+          "AtlasIndex": 65,
+          "Solid": false,
+          "Tag": "maple_1_1"
+        },
+        {
+          "Index": 66,
+          "AtlasIndex": 66,
+          "Solid": false,
+          "Tag": "maple_2_1"
+        },
+        {
+          "Index": 67,
+          "AtlasIndex": 67,
+          "Solid": false,
+          "Tag": "maple_3_1"
+        },
+        {
+          "Index": 68,
+          "AtlasIndex": 68,
+          "Solid": false,
+          "Tag": "pine_0_1"
+        },
+        {
+          "Index": 69,
+          "AtlasIndex": 69,
+          "Solid": false,
+          "Tag": "pine_1_1"
+        },
+        {
+          "Index": 70,
+          "AtlasIndex": 70,
+          "Solid": false,
+          "Tag": "pine_2_1"
+        },
+        {
+          "Index": 71,
+          "AtlasIndex": 71,
+          "Solid": false,
+          "Tag": "pine_3_1"
+        },
+        {
+          "Index": 72,
+          "AtlasIndex": 72,
+          "Solid": false,
+          "Tag": "willow_0_2"
+        },
+        {
+          "Index": 73,
+          "AtlasIndex": 73,
+          "Solid": false,
+          "Tag": "willow_1_2"
+        },
+        {
+          "Index": 74,
+          "AtlasIndex": 74,
+          "Solid": false,
+          "Tag": "willow_2_2"
+        },
+        {
+          "Index": 75,
+          "AtlasIndex": 75,
+          "Solid": false,
+          "Tag": "willow_3_2"
+        },
+        {
+          "Index": 76,
+          "AtlasIndex": 76,
+          "Solid": false,
+          "Tag": "maple_0_2"
+        },
+        {
+          "Index": 77,
+          "AtlasIndex": 77,
+          "Solid": false,
+          "Tag": "maple_1_2"
+        },
+        {
+          "Index": 78,
+          "AtlasIndex": 78,
+          "Solid": false,
+          "Tag": "maple_2_2"
+        },
+        {
+          "Index": 79,
+          "AtlasIndex": 79,
+          "Solid": false,
+          "Tag": "maple_3_2"
+        },
+        {
+          "Index": 80,
+          "AtlasIndex": 80,
+          "Solid": false,
+          "Tag": "pine_0_2"
+        },
+        {
+          "Index": 81,
+          "AtlasIndex": 81,
+          "Solid": false,
+          "Tag": "pine_1_2"
+        },
+        {
+          "Index": 82,
+          "AtlasIndex": 82,
+          "Solid": false,
+          "Tag": "pine_2_2"
+        },
+        {
+          "Index": 83,
+          "AtlasIndex": 83,
+          "Solid": false,
+          "Tag": "pine_3_2"
+        },
+        {
+          "Index": 84,
+          "AtlasIndex": 84,
+          "Solid": false,
+          "Tag": "willow_0_3"
+        },
+        {
+          "Index": 85,
+          "AtlasIndex": 85,
+          "Solid": true,
+          "Tag": "willow_1_3"
+        },
+        {
+          "Index": 86,
+          "AtlasIndex": 86,
+          "Solid": true,
+          "Tag": "willow_2_3"
+        },
+        {
+          "Index": 87,
+          "AtlasIndex": 87,
+          "Solid": false,
+          "Tag": "willow_3_3"
+        },
+        {
+          "Index": 88,
+          "AtlasIndex": 88,
+          "Solid": false,
+          "Tag": "maple_0_3"
+        },
+        {
+          "Index": 89,
+          "AtlasIndex": 89,
+          "Solid": true,
+          "Tag": "maple_1_3"
+        },
+        {
+          "Index": 90,
+          "AtlasIndex": 90,
+          "Solid": true,
+          "Tag": "maple_2_3"
+        },
+        {
+          "Index": 91,
+          "AtlasIndex": 91,
+          "Solid": false,
+          "Tag": "maple_3_3"
+        },
+        {
+          "Index": 92,
+          "AtlasIndex": 92,
+          "Solid": false,
+          "Tag": "pine_0_3"
+        },
+        {
+          "Index": 93,
+          "AtlasIndex": 93,
+          "Solid": true,
+          "Tag": "pine_1_3"
+        },
+        {
+          "Index": 94,
+          "AtlasIndex": 94,
+          "Solid": true,
+          "Tag": "pine_2_3"
+        },
+        {
+          "Index": 95,
+          "AtlasIndex": 95,
+          "Solid": false,
+          "Tag": "pine_3_3"
+        },
+        {
+          "Index": 96,
+          "AtlasIndex": 96,
+          "Solid": false,
+          "Tag": "stump_cut_0_0"
+        },
+        {
+          "Index": 97,
+          "AtlasIndex": 97,
+          "Solid": false,
+          "Tag": "stump_cut_1_0"
+        },
+        {
+          "Index": 98,
+          "AtlasIndex": 98,
+          "Solid": false,
+          "Tag": "stump_hollow_0_0"
+        },
+        {
+          "Index": 99,
+          "AtlasIndex": 99,
+          "Solid": false,
+          "Tag": "stump_hollow_1_0"
+        },
+        {
+          "Index": 100,
+          "AtlasIndex": 100,
+          "Solid": false,
+          "Tag": "shrub_round_0_0"
+        },
+        {
+          "Index": 101,
+          "AtlasIndex": 101,
+          "Solid": false,
+          "Tag": "shrub_round_1_0"
+        },
+        {
+          "Index": 102,
+          "AtlasIndex": 102,
+          "Solid": false,
+          "Tag": "shrub_berry_0_0"
+        },
+        {
+          "Index": 103,
+          "AtlasIndex": 103,
+          "Solid": false,
+          "Tag": "shrub_berry_1_0"
+        },
+        {
+          "Index": 104,
+          "AtlasIndex": 104,
+          "Solid": false,
+          "Tag": "flowers_daisy_0_0"
+        },
+        {
+          "Index": 105,
+          "AtlasIndex": 105,
+          "Solid": false,
+          "Tag": "flowers_daisy_1_0"
+        },
+        {
+          "Index": 106,
+          "AtlasIndex": 106,
+          "Solid": false,
+          "Tag": "flowers_violet_0_0"
+        },
+        {
+          "Index": 107,
+          "AtlasIndex": 107,
+          "Solid": false,
+          "Tag": "flowers_violet_1_0"
+        },
+        {
+          "Index": 108,
+          "AtlasIndex": 108,
+          "Solid": true,
+          "Tag": "stump_cut_0_1"
+        },
+        {
+          "Index": 109,
+          "AtlasIndex": 109,
+          "Solid": true,
+          "Tag": "stump_cut_1_1"
+        },
+        {
+          "Index": 110,
+          "AtlasIndex": 110,
+          "Solid": true,
+          "Tag": "stump_hollow_0_1"
+        },
+        {
+          "Index": 111,
+          "AtlasIndex": 111,
+          "Solid": true,
+          "Tag": "stump_hollow_1_1"
+        },
+        {
+          "Index": 112,
+          "AtlasIndex": 112,
+          "Solid": true,
+          "Tag": "shrub_round_0_1"
+        },
+        {
+          "Index": 113,
+          "AtlasIndex": 113,
+          "Solid": true,
+          "Tag": "shrub_round_1_1"
+        },
+        {
+          "Index": 114,
+          "AtlasIndex": 114,
+          "Solid": true,
+          "Tag": "shrub_berry_0_1"
+        },
+        {
+          "Index": 115,
+          "AtlasIndex": 115,
+          "Solid": true,
+          "Tag": "shrub_berry_1_1"
+        },
+        {
+          "Index": 116,
+          "AtlasIndex": 116,
+          "Solid": false,
+          "Tag": "flowers_daisy_0_1"
+        },
+        {
+          "Index": 117,
+          "AtlasIndex": 117,
+          "Solid": false,
+          "Tag": "flowers_daisy_1_1"
+        },
+        {
+          "Index": 118,
+          "AtlasIndex": 118,
+          "Solid": false,
+          "Tag": "flowers_violet_0_1"
+        },
+        {
+          "Index": 119,
+          "AtlasIndex": 119,
+          "Solid": false,
+          "Tag": "flowers_violet_1_1"
+        }
+      ],
+      "VisualGroups": [
+        {
+          "Id": "oak",
+          "Width": 4,
+          "Height": 4,
+          "Pattern": [
+            0,
+            1,
+            2,
+            3,
+            12,
+            13,
+            14,
+            15,
+            24,
+            25,
+            26,
+            27,
+            36,
+            37,
+            38,
+            39
+          ],
+          "AnchorX": 2,
+          "AnchorY": 4
+        },
+        {
+          "Id": "spruce",
+          "Width": 4,
+          "Height": 4,
+          "Pattern": [
+            4,
+            5,
+            6,
+            7,
+            16,
+            17,
+            18,
+            19,
+            28,
+            29,
+            30,
+            31,
+            40,
+            41,
+            42,
+            43
+          ],
+          "AnchorX": 2,
+          "AnchorY": 4
+        },
+        {
+          "Id": "birch",
+          "Width": 4,
+          "Height": 4,
+          "Pattern": [
+            8,
+            9,
+            10,
+            11,
+            20,
+            21,
+            22,
+            23,
+            32,
+            33,
+            34,
+            35,
+            44,
+            45,
+            46,
+            47
+          ],
+          "AnchorX": 2,
+          "AnchorY": 4
+        },
+        {
+          "Id": "willow",
+          "Width": 4,
+          "Height": 4,
+          "Pattern": [
+            48,
+            49,
+            50,
+            51,
+            60,
+            61,
+            62,
+            63,
+            72,
+            73,
+            74,
+            75,
+            84,
+            85,
+            86,
+            87
+          ],
+          "AnchorX": 2,
+          "AnchorY": 4
+        },
+        {
+          "Id": "maple",
+          "Width": 4,
+          "Height": 4,
+          "Pattern": [
+            52,
+            53,
+            54,
+            55,
+            64,
+            65,
+            66,
+            67,
+            76,
+            77,
+            78,
+            79,
+            88,
+            89,
+            90,
+            91
+          ],
+          "AnchorX": 2,
+          "AnchorY": 4
+        },
+        {
+          "Id": "pine",
+          "Width": 4,
+          "Height": 4,
+          "Pattern": [
+            56,
+            57,
+            58,
+            59,
+            68,
+            69,
+            70,
+            71,
+            80,
+            81,
+            82,
+            83,
+            92,
+            93,
+            94,
+            95
+          ],
+          "AnchorX": 2,
+          "AnchorY": 4
+        },
+        {
+          "Id": "stump_cut",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            96,
+            97,
+            108,
+            109
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "stump_hollow",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            98,
+            99,
+            110,
+            111
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "shrub_round",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            100,
+            101,
+            112,
+            113
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "shrub_berry",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            102,
+            103,
+            114,
+            115
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "flowers_daisy",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            104,
+            105,
+            116,
+            117
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        },
+        {
+          "Id": "flowers_violet",
+          "Width": 2,
+          "Height": 2,
+          "Pattern": [
+            106,
+            107,
+            118,
+            119
+          ],
+          "AnchorX": 1,
+          "AnchorY": 2
+        }
+      ]
+    }
+  ]
+}
