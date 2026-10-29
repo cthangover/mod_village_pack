@@ -238,7 +238,7 @@
         {
           "Index": 38,
           "AtlasIndex": 38,
-          "Solid": true,
+          "Solid": false,
           "Tag": "oak_2_3"
         },
         {
@@ -262,7 +262,7 @@
         {
           "Index": 42,
           "AtlasIndex": 42,
-          "Solid": true,
+          "Solid": false,
           "Tag": "spruce_2_3"
         },
         {
@@ -280,7 +280,7 @@
         {
           "Index": 45,
           "AtlasIndex": 45,
-          "Solid": true,
+          "Solid": false,
           "Tag": "birch_1_3"
         },
         {
@@ -526,7 +526,7 @@
         {
           "Index": 86,
           "AtlasIndex": 86,
-          "Solid": true,
+          "Solid": false,
           "Tag": "willow_2_3"
         },
         {
@@ -550,7 +550,7 @@
         {
           "Index": 90,
           "AtlasIndex": 90,
-          "Solid": true,
+          "Solid": false,
           "Tag": "maple_2_3"
         },
         {
@@ -568,7 +568,7 @@
         {
           "Index": 93,
           "AtlasIndex": 93,
-          "Solid": true,
+          "Solid": false,
           "Tag": "pine_1_3"
         },
         {

@@ -287,25 +287,25 @@
         },
         {
           "Index": 87,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cottage_7",
           "AtlasIndex": 133
         },
         {
           "Index": 88,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cottage_8",
           "AtlasIndex": 134
         },
         {
           "Index": 89,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cottage_9",
           "AtlasIndex": 135
         },
         {
           "Index": 90,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cottage_10",
           "AtlasIndex": 136
         },
@@ -323,7 +323,7 @@
         },
         {
           "Index": 93,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cottage_13",
           "AtlasIndex": 145
         },
@@ -341,7 +341,7 @@
         },
         {
           "Index": 96,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cottage_16",
           "AtlasIndex": 148
         },
@@ -403,7 +403,7 @@
         },
         {
           "Index": 105,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cottage_25",
           "Light": {
             "Radius": 2.2,
@@ -425,7 +425,7 @@
         },
         {
           "Index": 108,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cottage_28",
           "Light": {
             "Radius": 2.2,

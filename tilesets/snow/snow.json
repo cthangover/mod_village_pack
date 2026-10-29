@@ -96,13 +96,13 @@
         {
           "Index": 114,
           "AtlasIndex": 34,
-          "Solid": false,
+          "Solid": true,
           "Tag": "cabin_2_2"
         },
         {
           "Index": 115,
           "AtlasIndex": 35,
-          "Solid": false,
+          "Solid": true,
           "Tag": "cabin_3_2"
         },
         {
@@ -126,25 +126,25 @@
         {
           "Index": 119,
           "AtlasIndex": 49,
-          "Solid": false,
+          "Solid": true,
           "Tag": "cabin_1_3"
         },
         {
           "Index": 120,
           "AtlasIndex": 50,
-          "Solid": false,
+          "Solid": true,
           "Tag": "cabin_2_3"
         },
         {
           "Index": 121,
           "AtlasIndex": 51,
-          "Solid": false,
+          "Solid": true,
           "Tag": "cabin_3_3"
         },
         {
           "Index": 122,
           "AtlasIndex": 52,
-          "Solid": false,
+          "Solid": true,
           "Tag": "cabin_4_3"
         },
         {
@@ -156,13 +156,13 @@
         {
           "Index": 124,
           "AtlasIndex": 64,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cabin_0_4"
         },
         {
           "Index": 125,
           "AtlasIndex": 65,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cabin_1_4"
         },
         {
@@ -180,13 +180,13 @@
         {
           "Index": 128,
           "AtlasIndex": 68,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cabin_4_4"
         },
         {
           "Index": 129,
           "AtlasIndex": 69,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cabin_5_4"
         },
         {
@@ -246,7 +246,7 @@
         {
           "Index": 149,
           "AtlasIndex": 54,
-          "Solid": true,
+          "Solid": false,
           "Tag": "spruce_0_3"
         },
         {
@@ -258,7 +258,7 @@
         {
           "Index": 151,
           "AtlasIndex": 56,
-          "Solid": true,
+          "Solid": false,
           "Tag": "spruce_2_3"
         },
         {
@@ -276,13 +276,13 @@
         {
           "Index": 162,
           "AtlasIndex": 25,
-          "Solid": false,
+          "Solid": true,
           "Tag": "well_0_1"
         },
         {
           "Index": 163,
           "AtlasIndex": 26,
-          "Solid": false,
+          "Solid": true,
           "Tag": "well_1_1"
         },
         {
@@ -306,19 +306,19 @@
         {
           "Index": 181,
           "AtlasIndex": 12,
-          "Solid": false,
+          "Solid": true,
           "Tag": "cart_1_0"
         },
         {
           "Index": 182,
           "AtlasIndex": 13,
-          "Solid": false,
+          "Solid": true,
           "Tag": "cart_2_0"
         },
         {
           "Index": 183,
           "AtlasIndex": 27,
-          "Solid": true,
+          "Solid": false,
           "Tag": "cart_0_1"
         },
         {

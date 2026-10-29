@@ -90,25 +90,25 @@
         {
           "Index": 113,
           "AtlasIndex": 33,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_1_2"
         },
         {
           "Index": 114,
           "AtlasIndex": 34,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_2_2"
         },
         {
           "Index": 115,
           "AtlasIndex": 35,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_3_2"
         },
         {
           "Index": 116,
           "AtlasIndex": 36,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_4_2"
         },
         {
@@ -120,31 +120,31 @@
         {
           "Index": 118,
           "AtlasIndex": 48,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_0_3"
         },
         {
           "Index": 119,
           "AtlasIndex": 49,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_1_3"
         },
         {
           "Index": 120,
           "AtlasIndex": 50,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_2_3"
         },
         {
           "Index": 121,
           "AtlasIndex": 51,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_3_3"
         },
         {
           "Index": 122,
           "AtlasIndex": 52,
-          "Solid": false,
+          "Solid": true,
           "Tag": "adobe_4_3"
         },
         {
@@ -156,13 +156,13 @@
         {
           "Index": 124,
           "AtlasIndex": 64,
-          "Solid": true,
+          "Solid": false,
           "Tag": "adobe_0_4"
         },
         {
           "Index": 125,
           "AtlasIndex": 65,
-          "Solid": true,
+          "Solid": false,
           "Tag": "adobe_1_4"
         },
         {
@@ -180,13 +180,13 @@
         {
           "Index": 128,
           "AtlasIndex": 68,
-          "Solid": true,
+          "Solid": false,
           "Tag": "adobe_4_4"
         },
         {
           "Index": 129,
           "AtlasIndex": 69,
-          "Solid": true,
+          "Solid": false,
           "Tag": "adobe_5_4"
         },
         {
@@ -240,7 +240,7 @@
         {
           "Index": 148,
           "AtlasIndex": 24,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_2_1"
         },
         {
@@ -270,25 +270,25 @@
         {
           "Index": 153,
           "AtlasIndex": 39,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_1_2"
         },
         {
           "Index": 154,
           "AtlasIndex": 40,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_2_2"
         },
         {
           "Index": 155,
           "AtlasIndex": 41,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_3_2"
         },
         {
           "Index": 156,
           "AtlasIndex": 42,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_4_2"
         },
         {
@@ -300,31 +300,31 @@
         {
           "Index": 158,
           "AtlasIndex": 54,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_0_3"
         },
         {
           "Index": 159,
           "AtlasIndex": 55,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_1_3"
         },
         {
           "Index": 160,
           "AtlasIndex": 56,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_2_3"
         },
         {
           "Index": 161,
           "AtlasIndex": 57,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_3_3"
         },
         {
           "Index": 162,
           "AtlasIndex": 58,
-          "Solid": false,
+          "Solid": true,
           "Tag": "caravan_4_3"
         },
         {
@@ -336,13 +336,13 @@
         {
           "Index": 164,
           "AtlasIndex": 70,
-          "Solid": true,
+          "Solid": false,
           "Tag": "caravan_0_4"
         },
         {
           "Index": 165,
           "AtlasIndex": 71,
-          "Solid": true,
+          "Solid": false,
           "Tag": "caravan_1_4"
         },
         {
@@ -360,13 +360,13 @@
         {
           "Index": 168,
           "AtlasIndex": 74,
-          "Solid": true,
+          "Solid": false,
           "Tag": "caravan_4_4"
         },
         {
           "Index": 169,
           "AtlasIndex": 75,
-          "Solid": true,
+          "Solid": false,
           "Tag": "caravan_5_4"
         },
         {
@@ -444,31 +444,31 @@
         {
           "Index": 192,
           "AtlasIndex": 60,
-          "Solid": false,
+          "Solid": true,
           "Tag": "tower_0_3"
         },
         {
           "Index": 193,
           "AtlasIndex": 61,
-          "Solid": false,
+          "Solid": true,
           "Tag": "tower_1_3"
         },
         {
           "Index": 194,
           "AtlasIndex": 62,
-          "Solid": false,
+          "Solid": true,
           "Tag": "tower_2_3"
         },
         {
           "Index": 195,
           "AtlasIndex": 63,
-          "Solid": false,
+          "Solid": true,
           "Tag": "tower_3_3"
         },
         {
           "Index": 196,
           "AtlasIndex": 76,
-          "Solid": true,
+          "Solid": false,
           "Tag": "tower_0_4"
         },
         {
@@ -486,7 +486,7 @@
         {
           "Index": 199,
           "AtlasIndex": 79,
-          "Solid": true,
+          "Solid": false,
           "Tag": "tower_3_4"
         },
         {
@@ -546,7 +546,7 @@
         {
           "Index": 229,
           "AtlasIndex": 128,
-          "Solid": true,
+          "Solid": false,
           "Tag": "palm_0_3"
         },
         {
@@ -558,7 +558,7 @@
         {
           "Index": 231,
           "AtlasIndex": 130,
-          "Solid": true,
+          "Solid": false,
           "Tag": "palm_2_3"
         },
         {
