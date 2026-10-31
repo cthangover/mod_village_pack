@@ -1,0 +1,125 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/enemy/white_wolf",
+      "Form": "actor",
+      "Category": "enemy",
+      "Charset": "snow/white_wolf",
+      "Route": {
+        "Steps": [
+          "left",
+          "wait",
+          "right",
+          "wait"
+        ],
+        "Every": 0.75,
+        "Repeat": true
+      },
+      "Interact": {
+        "Trigger": "Use",
+        "Commands": [
+          "action rpg.battle enemies=village_pack/white_wolf win_flag=self.won",
+          "end"
+        ]
+      },
+      "States": [
+        {
+          "Id": "won",
+          "When": "self.won == 1",
+          "Hidden": true
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/enemy/yeti",
+      "Form": "actor",
+      "Category": "enemy",
+      "Charset": "snow/yeti",
+      "Route": {
+        "Steps": [
+          "left",
+          "wait",
+          "right",
+          "wait"
+        ],
+        "Every": 1.8,
+        "Repeat": true
+      },
+      "Interact": {
+        "Trigger": "Use",
+        "Commands": [
+          "action rpg.battle enemies=village_pack/yeti win_flag=self.won",
+          "end"
+        ]
+      },
+      "States": [
+        {
+          "Id": "won",
+          "When": "self.won == 1",
+          "Hidden": true
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/enemy/walrus",
+      "Form": "actor",
+      "Category": "enemy",
+      "Charset": "snow/walrus",
+      "Route": {
+        "Steps": [
+          "left",
+          "wait",
+          "right",
+          "wait"
+        ],
+        "Every": 2.0,
+        "Repeat": true
+      },
+      "Interact": {
+        "Trigger": "Use",
+        "Commands": [
+          "action rpg.battle enemies=village_pack/walrus win_flag=self.won",
+          "end"
+        ]
+      },
+      "States": [
+        {
+          "Id": "won",
+          "When": "self.won == 1",
+          "Hidden": true
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/enemy/polar_bear",
+      "Form": "actor",
+      "Category": "enemy",
+      "Charset": "snow/polar_bear",
+      "Route": {
+        "Steps": [
+          "left",
+          "wait",
+          "right",
+          "wait"
+        ],
+        "Every": 1.25,
+        "Repeat": true
+      },
+      "Interact": {
+        "Trigger": "Use",
+        "Commands": [
+          "action rpg.battle enemies=village_pack/polar_bear win_flag=self.won",
+          "end"
+        ]
+      },
+      "States": [
+        {
+          "Id": "won",
+          "When": "self.won == 1",
+          "Hidden": true
+        }
+      ]
+    }
+  ]
+}

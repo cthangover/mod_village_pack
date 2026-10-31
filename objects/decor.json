@@ -1,0 +1,340 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/decor/log_pile",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          3,
+          2
+        ],
+        "Solid": [
+          "...",
+          "###"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/log_pile",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/market_stall",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          4,
+          4
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "....",
+          "####"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/market_stall",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/cistern",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          3,
+          3
+        ],
+        "Solid": [
+          "...",
+          "...",
+          "###"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/cistern",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/pottery",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          3,
+          2
+        ],
+        "Solid": [
+          "...",
+          "###"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/pottery",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/sled",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          4,
+          3
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "####"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/sled",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/obelisk",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          3,
+          4
+        ],
+        "Solid": [
+          "...",
+          "...",
+          "...",
+          "###"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/obelisk",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/well_snowy",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          2,
+          3
+        ],
+        "Solid": [
+          "..",
+          "##",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/well_snowy",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/hand_cart",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          3,
+          2
+        ],
+        "Solid": [
+          ".##",
+          ".##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/hand_cart",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/firewood_stack",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/firewood_stack",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/signpost_snowy",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          1,
+          2
+        ],
+        "Solid": [
+          ".",
+          "#"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/signpost_snowy",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/barrel_snowy",
+      "Form": "sprite",
+      "Category": "decor",
+      "Footprint": {
+        "Size": [
+          1,
+          1
+        ],
+        "Solid": [
+          "#"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "decor/barrel_snowy",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/sign",
+      "Name": "village_pack/object/sign/name",
+      "Form": "sprite",
+      "Category": "decor",
+      "Parts": [
+        {
+          "Image": "decor/sign",
+          "Geometry": "upright"
+        }
+      ],
+      "Interact": {
+        "Trigger": "Use",
+        "Commands": [
+          "ptext \"The sign has weathered away.\" key=village_pack/object/sign/text"
+        ]
+      }
+    },
+    {
+      "Id": "village_pack/decor/well",
+      "Form": "sprite",
+      "Category": "decor",
+      "Parts": [
+        {
+          "Image": "decor/well",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/barrel_classic",
+      "Form": "sprite",
+      "Category": "decor",
+      "Parts": [
+        {
+          "Image": "decor/barrel_classic",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/branches",
+      "Form": "sprite",
+      "Category": "decor",
+      "Solid": false,
+      "Parts": [
+        {
+          "Image": "decor/branches",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/stones",
+      "Form": "sprite",
+      "Category": "decor",
+      "Solid": false,
+      "Parts": [
+        {
+          "Image": "decor/stones",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/waystone",
+      "Form": "sprite",
+      "Category": "decor",
+      "Parts": [
+        {
+          "Image": "decor/waystone",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/living_roots",
+      "Form": "sprite",
+      "Category": "decor",
+      "Parts": [
+        {
+          "Image": "decor/living_roots",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/decor/barrel",
+      "Name": "village_pack/object/barrel/name",
+      "Form": "sprite",
+      "Category": "decor",
+      "Parts": [
+        {
+          "Image": "container/barrel_closed",
+          "Geometry": "upright"
+        }
+      ]
+    }
+  ]
+}

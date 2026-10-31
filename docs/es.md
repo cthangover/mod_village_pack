@@ -1,8 +1,8 @@
 # Village Pack — arte para mapas RPG y batallas
 
-Village Pack es el kit de arte detrás del mundo de RPG Plus: tilesets para pintar mapas, sprites que caminan para héroes, aldeanos y monstruos, retratos de combate y fondos de batalla. Todo está dibujado en un mismo estilo pictórico 2.5D, así que los mapas hechos con él parecen un solo mundo.
+Arte y objetos reutilizables para RPG: nueve tilesets, sprites, imágenes de batalla, contenedores de un solo uso y perfiles editables de bosque, nieve, polvo y lluvia.
 
-Es **solo arte**. La aldea, la casa del anciano, el bosque y el desierto que puedes recorrer son mapas y eventos de los mods de contenido RPG Demo y RPG Plus; caminar, las colisiones y las batallas son del motor RPG. Village Pack aporta las imágenes que estos usan.
+El paquete contiene gráficos, plantillas de objetos y perfiles de ambiente reutilizables. Los mapas, misiones y recompensas pertenecen a `rpg_plus_game`.
 
 ![El mapa de la aldea de noche, pintado con el tileset village: cabañas, una plaza adoquinada con farolas, árboles, un estanque y aldeanos dibujados con los charsets del paquete.](assets/village-map.jpg)
 
@@ -30,12 +30,12 @@ Cuatro tilesets de vegetación muestran los mismos árboles, arbustos, tocones y
 
 ![La misma vegetación en cuatro estaciones, de izquierda a derecha: verano, otoño, ramas desnudas e invierno.](assets/vegetation.jpg)
 
-Un mapa usa exactamente un tileset, y ninguno de los mapas incluidos usa todavía los de vegetación. Son material listo para quien escriba mapas.
+El mapa tiene un tileset principal para el suelo y puede tomar objetos de otros mediante `Tilesets`. Paso Blanco (`rpg_winter`), al oeste del desierto, usa `snow`, `vegetation_winter` y `village`.
 
 ### Desierto y nieve
 
 - `desert`: superficies de arena y roca con objetos del desierto — edificios de adobe, un toldo de mercado, palmeras, cactus y hierba seca. El mapa desértico de RPG Plus, el Dry March, está pintado con él.
-- `snow`: nieve fresca, hielo y dos superficies de sendero pisado (`packed_snow` y el `trampled_snow`, con huellas más marcadas), junto con una cabaña, un carro, un pozo, rocas, arbustos y abetos nevados. Ningún mapa incluido lo usa todavía.
+- `snow`: El mapa tiene un tileset principal para el suelo y puede tomar objetos de otros mediante `Tilesets`. Paso Blanco (`rpg_winter`), al oeste del desierto, usa `snow`, `vegetation_winter` y `village`.
 
 ![Las cuatro superficies de nieve: nieve fresca, hielo, nieve apisonada con huellas poco profundas y nieve muy pisoteada.](assets/snow_surfaces.png)
 
@@ -106,7 +106,7 @@ La forma más sencilla de pintar es el editor de mapas RPG: elige `village` como
 
 ## Límites y sustitución
 
-- Un tileset por mapa. No puedes mezclar el tileset village con uno de vegetación en el mismo mapa.
+- El mapa tiene un tileset principal para el suelo y puede tomar objetos de otros mediante `Tilesets`. Paso Blanco (`rpg_winter`), al oeste del desierto, usa `snow`, `vegetation_winter` y `village`.
 - El arte tiene la luz y la perspectiva horneadas. Está dibujado para el aspecto 2.5D; el renderizador isométrico reutiliza las mismas imágenes, así que los objetos muy altos conservan su ángulo pintado.
 - Para sustituir una imagen en tu juego, incluye en tu mod un archivo con el mismo nombre relativo y declara dependencia de `village_pack`. Gana el mod dependiente, que se carga después.
 - Las generaciones originales, los prompts y las fuentes editables están archivados fuera del juego; el mod contiene solo las imágenes listas para ejecutar y las definiciones de tileset.
@@ -116,3 +116,27 @@ La forma más sencilla de pintar es el editor de mapas RPG: elige `village` como
 1. Un mapa sin suelo u objetos suele deberse a un nombre de `Tileset` mal escrito o a una dependencia que falta.
 2. Un personaje invisible: comprueba el nombre de `Sprite` y que la hoja del charset sea de 3 × 4 fotogramas.
 3. Una batalla con fondo liso: la escena del mapa no tiene `defaultBackground`.
+
+## Objetos y ambiente reutilizables
+
+En **Objetos** del editor coloca `chest` o `village_pack/barrel`. Cada instancia tiene su estado, mensaje vacío e imagen abierta. La plantilla no fija moneda ni recompensas: añádelas en el editor. El texto fuente es inglés; los siete idiomas usan claves de localización.
+
+Elige `woodland`, `winter_snow`, `desert_dust` o `rain` en Ambiente. Duplica un perfil de `atmospheres/weather.json` con otro Id para cambiar partículas, colores, tamaños y velocidades. La lista incluye todos los mods cargados. Effects Engine permite añadir nuevos tipos de emisores sin cambiar los renderizadores.
+
+![Winter: top-down](assets/winter_topdown.png)
+
+![Winter: isometric](assets/winter_isometric.png)
+
+## Enemigos de nieve
+
+El paquete incluye lobo blanco, morsa, oso polar y yeti, con nombres en siete idiomas, retratos de combate y hojas de movimiento transparentes de 3 × 4. Sus ID son `village_pack/white_wolf`, `village_pack/walrus`, `village_pack/polar_bear` y `village_pack/yeti`.
+
+Patrullan el Paso Blanco (`rpg_winter`). Acércate y pulsa E/F para combatir; cada enemigo desaparece tras la victoria y el resultado se conserva al guardar. Usan ataque y defensa; no se pueden reclutar. El juego puede definir el botín mediante parches. Los valores de salud/ataque/defensa/experiencia son 24/5/0/14, 32/5/2/20, 40/7/1/28 y 48/8/1/36, respectivamente.
+
+## Asentamientos e interiores ampliados
+
+Los tilesets `habitat_objects` y `habitat_interiors` añaden 22 recursos: seis fachadas, seis interiores, siete objetos exteriores y tres muebles. La aldea y el bosque reciben casas de madera; el desierto, casas de adobe y una posada; la nieve, una cabaña y un refugio de montaña. Los mismos PNG sirven para ambas proyecciones. Cada sala de 12 × 10 tiene suelo, paredes y un umbral de dos casillas, con planos `IsoPlanes` y muebles independientes.
+
+Hay siete edificios accesibles y cinco mapas ampliados: aldea 64 × 42, bosque 60 × 42, desierto 72 × 48, nieve 72 × 52 y santuario 48 × 36. Se conservan los eventos y transiciones originales. Las puertas están en este paquete; los mapas y escenas interiores, en `rpg_plus_game`.
+
+![New building facades, shared interiors, outdoor props and furniture](assets/biome_expansion.jpg)

@@ -1,0 +1,99 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/furniture/bed",
+      "Form": "sprite",
+      "Category": "furniture",
+      "Footprint": {
+        "Size": [
+          3,
+          3
+        ],
+        "Solid": [
+          "...",
+          "###",
+          "###"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "furniture/bed",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/furniture/table",
+      "Form": "sprite",
+      "Category": "furniture",
+      "Footprint": {
+        "Size": [
+          3,
+          2
+        ],
+        "Solid": [
+          "###",
+          "###"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "furniture/table",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/furniture/iron_stove",
+      "Form": "sprite",
+      "Category": "furniture",
+      "Footprint": {
+        "Size": [
+          2,
+          3
+        ],
+        "Solid": [
+          "..",
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "furniture/iron_stove",
+          "Geometry": "upright"
+        }
+      ],
+      "Lights": [
+        {
+          "Radius": 3,
+          "Color": "#ffd79c",
+          "At": [
+            0.5,
+            1.5
+          ]
+        },
+        {
+          "Radius": 3,
+          "Color": "#ffd79c",
+          "At": [
+            1.5,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/furniture/workbench",
+      "Form": "sprite",
+      "Category": "furniture",
+      "Parts": [
+        {
+          "Image": "furniture/workbench",
+          "Geometry": "upright"
+        }
+      ]
+    }
+  ]
+}

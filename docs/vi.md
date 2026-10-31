@@ -1,8 +1,8 @@
 # Village Pack — art cho bản đồ RPG và chiến đấu
 
-Village Pack là bộ art đứng sau thế giới RPG Plus: tileset để vẽ bản đồ, sprite đi bộ cho anh hùng, dân làng và quái vật, chân dung chiến đấu và phông nền trận đánh. Tất cả đều vẽ theo một phong cách hội họa 2.5D thống nhất, nên bản đồ dựng từ nó trông như một thế giới.
+Đồ họa và đối tượng RPG tái sử dụng: chín bộ ô, sprite đi bộ, ảnh chiến đấu, vật chứa dùng một lần và hồ sơ rừng, tuyết, bụi, mưa có thể chỉnh sửa.
 
-Đây **chỉ là art**. Ngôi làng, nhà trưởng làng, khu rừng và sa mạc bạn có thể đi qua là bản đồ và sự kiện của các mod nội dung RPG Demo và RPG Plus; đi lại, va chạm và chiến đấu là việc của engine RPG. Village Pack cung cấp những hình mà chúng dùng.
+Gói chứa đồ họa, mẫu đối tượng và hồ sơ môi trường dùng chung. Bản đồ, nhiệm vụ và phần thưởng thuộc `rpg_plus_game`.
 
 ![Bản đồ làng ban đêm, vẽ bằng tileset village: những ngôi nhà nhỏ, quảng trường lát đá với đèn đường, cây cối, cái ao và dân làng vẽ bằng charset của gói.](assets/village-map.jpg)
 
@@ -30,12 +30,12 @@ Bốn tileset thực vật thể hiện cùng một bộ cây, bụi, gốc cây
 
 ![Cùng một bụi thực vật qua bốn mùa, từ trái sang: hè, thu, cành trụi và đông.](assets/vegetation.jpg)
 
-Một bản đồ chỉ dùng đúng một tileset, và chưa bản đồ kèm sẵn nào dùng các tileset thực vật. Chúng là nguyên liệu sẵn sàng cho người làm bản đồ.
+Bản đồ dùng một bộ ô chính cho mặt đất và có thể mượn đối tượng qua `Tilesets`. Đèo Trắng (`rpg_winter`), phía tây sa mạc, dùng `snow`, `vegetation_winter` và `village`.
 
 ### Sa mạc và tuyết
 
 - `desert`: bề mặt cát và đá cùng vật thể sa mạc — nhà đất nện, mái che chợ, cây cọ, xương rồng và cỏ khô. Bản đồ sa mạc của RPG Plus, Dry March, được vẽ bằng nó.
-- `snow`: tuyết mới, băng và hai bề mặt đường mòn bị giẫm (`packed_snow` và `trampled_snow` in dấu sâu hơn), cùng cabin, cỗ xe, giếng nước, đá, bụi cây và vân sam phủ tuyết. Chưa bản đồ nào dùng nó.
+- `snow`: Bản đồ dùng một bộ ô chính cho mặt đất và có thể mượn đối tượng qua `Tilesets`. Đèo Trắng (`rpg_winter`), phía tây sa mạc, dùng `snow`, `vegetation_winter` và `village`.
 
 ![Bốn bề mặt tuyết: tuyết mới, băng, tuyết ép với dấu chân nông và tuyết bị giẫm nát.](assets/snow_surfaces.png)
 
@@ -106,7 +106,7 @@ Cách vẽ đơn giản nhất là trình soạn thảo bản đồ RPG: chọn 
 
 ## Giới hạn và thay thế
 
-- Một tileset cho mỗi bản đồ. Không thể trộn tileset village với tileset thực vật trên cùng một bản đồ.
+- Bản đồ dùng một bộ ô chính cho mặt đất và có thể mượn đối tượng qua `Tilesets`. Đèo Trắng (`rpg_winter`), phía tây sa mạc, dùng `snow`, `vegetation_winter` và `village`.
 - Art có sẵn ánh sáng và phối cảnh được "nướng" sẵn. Nó vẽ cho vẻ 2.5D; trình dựng isometric dùng lại đúng những hình đó, nên vật thể quá cao vẫn giữ góc nhìn như đã vẽ.
 - Để thay một hình cho game của bạn, hãy đặt vào mod của mình một tệp trùng tên tương đối và khai báo phụ thuộc `village_pack`. Mod phụ thuộc nạp sau sẽ thắng.
 - Các bản sinh gốc, prompt và nguồn có thể chỉnh sửa đều được lưu trữ ngoài game; trong mod chỉ có ảnh chạy thời gian thực và định nghĩa tileset.
@@ -116,3 +116,27 @@ Cách vẽ đơn giản nhất là trình soạn thảo bản đồ RPG: chọn 
 1. Bản đồ thiếu nền hoặc vật thể thường do tên `Tileset` gõ sai hoặc thiếu phụ thuộc.
 2. Nhân vật vô hình: kiểm tra tên `Sprite` và bảng charset có đủ 3 × 4 khung không.
 3. Trận đánh nền trơn: cảnh của bản đồ không có `defaultBackground`.
+
+## Đối tượng và môi trường dùng chung
+
+Trong **Đối tượng** của trình sửa bản đồ, đặt `chest` hoặc `village_pack/barrel`. Mỗi đối tượng có cờ mở, thông báo rỗng và hình mở riêng. Mẫu không gắn tiền tệ hay phần thưởng; hãy đặt trong trình sửa. Văn bản nguồn là tiếng Anh; bảy ngôn ngữ dùng khóa bản địa hóa.
+
+Chọn `woodland`, `winter_snow`, `desert_dust` hoặc `rain` ở trường môi trường. Sao chép hồ sơ trong `atmospheres/weather.json` với Id mới để đổi số hạt, màu, kích thước, độ cao và vận tốc. Danh sách lấy từ mọi mod đã tải. Effects Engine cho phép thêm loại bộ phát mà không sửa bộ kết xuất.
+
+![Winter: top-down](assets/winter_topdown.png)
+
+![Winter: isometric](assets/winter_isometric.png)
+
+## Kẻ địch vùng tuyết
+
+Gói có sói trắng, hải mã, gấu Bắc Cực và người tuyết, với tên bằng bảy ngôn ngữ, ảnh chiến đấu và bộ ảnh di chuyển nền trong suốt 3 × 4. ID lần lượt là `village_pack/white_wolf`, `village_pack/walrus`, `village_pack/polar_bear`, `village_pack/yeti`.
+
+Chúng tuần tra ở Đèo Trắng (`rpg_winter`). Đến gần và nhấn E/F để chiến đấu. Kẻ địch bị đánh bại sẽ biến mất và trạng thái được lưu lại. Chúng dùng tấn công và phòng thủ, không thể chiêu mộ. Trò chơi có thể đặt chiến lợi phẩm bằng bản vá. Máu/tấn công/phòng thủ/kinh nghiệm lần lượt là 24/5/0/14, 32/5/2/20, 40/7/1/28 và 48/8/1/36.
+
+## Khu dân cư và nội thất mở rộng
+
+`habitat_objects` và `habitat_interiors` bổ sung 22 tài nguyên: sáu mặt ngoài nhà, sáu nội thất, bảy vật trang trí ngoài trời và ba món đồ nội thất. Làng và rừng có nhà gỗ, sa mạc có nhà đất và quán trọ lữ hành, vùng tuyết có nhà gỗ và nhà trọ trên núi. Cùng một PNG được dùng cho cả hai phép chiếu. Mỗi phòng 12 × 10 có sàn, tường và cửa phía nam rộng hai ô, được ánh xạ bằng `IsoPlanes`; đồ đạc đặt độc lập.
+
+Có thể ra vào bảy tòa nhà. Kích thước mới: làng 64 × 42, rừng 60 × 42, sa mạc 72 × 48, vùng tuyết 72 × 52, đền 48 × 36. Các sự kiện và lối chuyển cảnh cũ giữ nguyên tọa độ. Cửa thuộc gói này; bản đồ và cảnh nội thất thuộc `rpg_plus_game`.
+
+![New building facades, shared interiors, outdoor props and furniture](assets/biome_expansion.jpg)

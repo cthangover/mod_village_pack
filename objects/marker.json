@@ -1,0 +1,12 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/marker/trigger",
+      "Form": "sprite",
+      "Category": "marker",
+      "Solid": false,
+      "Parts": []
+    }
+  ]
+}

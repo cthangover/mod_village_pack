@@ -1,0 +1,141 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/ground/desert_sand",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/desert_sand"
+      }
+    },
+    {
+      "Id": "village_pack/ground/rocky_ground",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/rocky_ground",
+        "DiffuseStrength": 3
+      }
+    },
+    {
+      "Id": "village_pack/ground/oasis_water",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/oasis_water"
+      },
+      "Solid": true,
+      "Water": true
+    },
+    {
+      "Id": "village_pack/ground/oasis_silt",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/oasis_silt"
+      }
+    },
+    {
+      "Id": "village_pack/ground/desert_path",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/desert_path"
+      }
+    },
+    {
+      "Id": "village_pack/ground/snow",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/snow"
+      }
+    },
+    {
+      "Id": "village_pack/ground/ice",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/ice"
+      }
+    },
+    {
+      "Id": "village_pack/ground/packed_snow",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/packed_snow"
+      }
+    },
+    {
+      "Id": "village_pack/ground/trampled_snow",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/trampled_snow"
+      }
+    },
+    {
+      "Id": "village_pack/ground/grass",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/grass"
+      }
+    },
+    {
+      "Id": "village_pack/ground/town_paving",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/town_paving"
+      }
+    },
+    {
+      "Id": "village_pack/ground/earth",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/earth"
+      }
+    },
+    {
+      "Id": "village_pack/ground/stone_floor",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/stone_floor",
+        "Diffuse": false
+      }
+    },
+    {
+      "Id": "village_pack/ground/wood_floor",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/wood_floor",
+        "Diffuse": false
+      }
+    },
+    {
+      "Id": "village_pack/ground/forest_path",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/forest_path"
+      }
+    },
+    {
+      "Id": "village_pack/ground/water",
+      "Form": "surface",
+      "Category": "ground",
+      "Surface": {
+        "Image": "ground/water",
+        "DiffuseStrength": 3
+      },
+      "Solid": true,
+      "Water": true
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/structure/fence_snowy_left",
+      "Form": "segment",
+      "Category": "structure",
+      "Segment": {
+        "Image": "structure/fence_snowy_left",
+        "Connect": "fence_snowy",
+        "Along": "auto"
+      }
+    },
+    {
+      "Id": "village_pack/structure/fence_snowy_right",
+      "Form": "segment",
+      "Category": "structure",
+      "Segment": {
+        "Image": "structure/fence_snowy_right",
+        "Connect": "fence_snowy",
+        "Along": "auto"
+      }
+    },
+    {
+      "Id": "village_pack/structure/fence_wood",
+      "Form": "segment",
+      "Category": "structure",
+      "Segment": {
+        "Image": "structure/fence_wood",
+        "Connect": "fence_wood",
+        "Along": "auto"
+      }
+    }
+  ]
+}

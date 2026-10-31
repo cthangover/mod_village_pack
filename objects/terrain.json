@@ -1,0 +1,99 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/terrain/rocks_snowy",
+      "Form": "sprite",
+      "Category": "terrain",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "terrain/rocks_snowy",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/terrain/ice_crystal",
+      "Form": "sprite",
+      "Category": "terrain",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "terrain/ice_crystal",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/terrain/snowdrift",
+      "Form": "sprite",
+      "Category": "terrain",
+      "Footprint": {
+        "Size": [
+          2,
+          1
+        ],
+        "Solid": [
+          ".."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "terrain/snowdrift",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/terrain/cave_entrance",
+      "Form": "sprite",
+      "Category": "terrain",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "#.",
+          ".."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "terrain/cave_entrance",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/terrain/rock",
+      "Form": "sprite",
+      "Category": "terrain",
+      "Parts": [
+        {
+          "Image": "terrain/rock",
+          "Geometry": "upright"
+        }
+      ]
+    }
+  ]
+}

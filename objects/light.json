@@ -1,0 +1,126 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/light/lantern_post_snowy",
+      "Form": "sprite",
+      "Category": "light",
+      "Footprint": {
+        "Size": [
+          2,
+          4
+        ],
+        "Solid": [
+          "..",
+          "..",
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "light/lantern_post_snowy",
+          "Geometry": "upright"
+        }
+      ],
+      "Lights": [
+        {
+          "Radius": 3,
+          "Color": "#ffd79c",
+          "At": [
+            0.5,
+            2.5
+          ]
+        },
+        {
+          "Radius": 3,
+          "Color": "#ffd79c",
+          "At": [
+            1.5,
+            2.5
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/light/street_lamp_snowy",
+      "Form": "sprite",
+      "Category": "light",
+      "Footprint": {
+        "Size": [
+          1,
+          2
+        ],
+        "Solid": [
+          ".",
+          "#"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "light/street_lamp_snowy",
+          "Geometry": "upright"
+        }
+      ],
+      "Light": {
+        "Radius": 4,
+        "Color": "#ffcf80",
+        "At": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "Id": "village_pack/light/street_lamp",
+      "Form": "sprite",
+      "Category": "light",
+      "Footprint": {
+        "Size": [
+          1,
+          2
+        ],
+        "Solid": [
+          ".",
+          "#"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "light/street_lamp",
+          "Geometry": "upright"
+        }
+      ],
+      "Light": {
+        "Radius": 4,
+        "Color": "#ffcf80",
+        "At": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "Id": "village_pack/light/hearth",
+      "Form": "sprite",
+      "Category": "light",
+      "Parts": [
+        {
+          "Image": "light/hearth",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/light/ward_lantern",
+      "Form": "sprite",
+      "Category": "light",
+      "Parts": [
+        {
+          "Image": "light/ward_lantern",
+          "Geometry": "upright"
+        }
+      ]
+    }
+  ]
+}

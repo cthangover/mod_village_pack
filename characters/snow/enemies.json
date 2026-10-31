@@ -1,0 +1,81 @@
+{
+  "Kind": "character",
+  "Items": [
+    {
+      "Id": "village_pack/white_wolf",
+      "Name": "village_pack/enemy/white_wolf/name",
+      "Image": "characters/snow/white_wolf",
+      "Charset": "snow/white_wolf",
+      "Behaviour": "base",
+      "Level": 2,
+      "Point": 1,
+      "Health": 24,
+      "Defence": 0,
+      "Attack": 5,
+      "Exp": 14,
+      "RecruitmentChance": 0,
+      "Actions": [
+        "physics/attack",
+        "physics/defence"
+      ],
+      "Loot": []
+    },
+    {
+      "Id": "village_pack/walrus",
+      "Name": "village_pack/enemy/walrus/name",
+      "Image": "characters/snow/walrus",
+      "Charset": "snow/walrus",
+      "Behaviour": "base",
+      "Level": 3,
+      "Point": 1,
+      "Health": 32,
+      "Defence": 2,
+      "Attack": 5,
+      "Exp": 20,
+      "RecruitmentChance": 0,
+      "Actions": [
+        "physics/attack",
+        "physics/defence"
+      ],
+      "Loot": []
+    },
+    {
+      "Id": "village_pack/polar_bear",
+      "Name": "village_pack/enemy/polar_bear/name",
+      "Image": "characters/snow/polar_bear",
+      "Charset": "snow/polar_bear",
+      "Behaviour": "base",
+      "Level": 4,
+      "Point": 1,
+      "Health": 40,
+      "Defence": 1,
+      "Attack": 7,
+      "Exp": 28,
+      "RecruitmentChance": 0,
+      "Actions": [
+        "physics/attack",
+        "physics/defence"
+      ],
+      "Loot": []
+    },
+    {
+      "Id": "village_pack/yeti",
+      "Name": "village_pack/enemy/yeti/name",
+      "Image": "characters/snow/yeti",
+      "Charset": "snow/yeti",
+      "Behaviour": "base",
+      "Level": 5,
+      "Point": 1,
+      "Health": 48,
+      "Defence": 1,
+      "Attack": 8,
+      "Exp": 36,
+      "RecruitmentChance": 0,
+      "Actions": [
+        "physics/attack",
+        "physics/defence"
+      ],
+      "Loot": []
+    }
+  ]
+}

@@ -3,7 +3,24 @@
   "name": "Village Pack",
   "version": "1.0.0",
   "author": "ct",
-  "description": "The art kit behind the RPG Plus world: tilesets, charsets, battle portraits and backdrops in one painterly 2.5D style. Art only — no maps, no stories.",
+  "description": "Reusable RPG art: nine tilesets, walking sprites, battle artwork, snow enemies, six shared architectural interiors, reusable containers and editable atmosphere profiles.",
   "category": "visual, characters",
-  "depends": ["rpg>=1"]
+  "depends": [
+    "rpg>=1",
+    "effects_base>=1"
+  ],
+  "test_suites": [
+    {
+      "id": "snow_enemies",
+      "activate": [
+        "--itest=snow_enemies"
+      ]
+    },
+    {
+      "id": "biome_expansion",
+      "activate": [
+        "--itest=biome_expansion"
+      ]
+    }
+  ]
 }

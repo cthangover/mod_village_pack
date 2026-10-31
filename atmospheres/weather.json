@@ -1,0 +1,144 @@
+{
+  "Kind": "atmosphere",
+  "Items": [
+    {
+      "Id": "woodland",
+      "Emitters": [
+        {
+          "Type": "particles",
+          "Shape": "leaf",
+          "Count": 26,
+          "Color": "#b9aa5880",
+          "Velocity": [
+            0.08,
+            0.03,
+            -0.13
+          ],
+          "Height": [
+            0.2,
+            3
+          ],
+          "Size": [
+            0.8,
+            1.8
+          ],
+          "Sway": 0.18
+        },
+        {
+          "Type": "particles",
+          "Shape": "glow",
+          "Count": 18,
+          "Color": "#cbe785a0",
+          "Velocity": [
+            0.01,
+            0.015,
+            0
+          ],
+          "Height": [
+            0.15,
+            1.4
+          ],
+          "Size": [
+            0.4,
+            0.9
+          ],
+          "Pulse": 0.9,
+          "Sway": 0.2
+        },
+        {
+          "Type": "ripples",
+          "Count": 20,
+          "Color": "#a1ded626",
+          "Region": "water"
+        }
+      ],
+      "Name": "village_pack/atmosphere/woodland"
+    },
+    {
+      "Id": "winter_snow",
+      "Emitters": [
+        {
+          "Type": "particles",
+          "Shape": "flake",
+          "Count": 180,
+          "Color": "#eaf6ffb0",
+          "Velocity": [
+            0.08,
+            0.015,
+            -0.65
+          ],
+          "Height": [
+            0.1,
+            7
+          ],
+          "Size": [
+            0.55,
+            1.35
+          ],
+          "Sway": 0.2
+        }
+      ],
+      "Name": "village_pack/atmosphere/winter_snow"
+    },
+    {
+      "Id": "desert_dust",
+      "Emitters": [
+        {
+          "Type": "particles",
+          "Shape": "dust",
+          "Count": 60,
+          "Color": "#cfac7145",
+          "Velocity": [
+            0.24,
+            0.08,
+            0
+          ],
+          "Height": [
+            0.1,
+            0.8
+          ],
+          "Size": [
+            0.5,
+            1.4
+          ],
+          "Sway": 0.08,
+          "Pulse": 0.5
+        }
+      ],
+      "Name": "village_pack/atmosphere/desert_dust"
+    },
+    {
+      "Id": "rain",
+      "Emitters": [
+        {
+          "Type": "particles",
+          "Shape": "streak",
+          "Count": 130,
+          "Color": "#bad5ea70",
+          "Velocity": [
+            0.1,
+            0.02,
+            -3
+          ],
+          "Height": [
+            0.1,
+            8
+          ],
+          "Size": [
+            0.5,
+            0.8
+          ],
+          "Trail": 0.12,
+          "Sway": 0
+        },
+        {
+          "Type": "ripples",
+          "Count": 25,
+          "Color": "#a1ded640",
+          "Region": "water"
+        }
+      ],
+      "Name": "village_pack/atmosphere/rain"
+    }
+  ]
+}

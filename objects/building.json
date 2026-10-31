@@ -1,0 +1,340 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/building/adobe_house",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          6,
+          5
+        ],
+        "Solid": [
+          "......",
+          "......",
+          ".####.",
+          "#####.",
+          "..##.."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/adobe_house",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/caravan_tent",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          6,
+          5
+        ],
+        "Solid": [
+          "......",
+          "..#...",
+          ".####.",
+          "#####.",
+          "..##.."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/caravan_tent",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/ruined_tower",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          4,
+          5
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "....",
+          "####",
+          ".##."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/ruined_tower",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/wood_townhouse",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          8,
+          7
+        ],
+        "Solid": [
+          "........",
+          "........",
+          "........",
+          "........",
+          "........",
+          "########",
+          "########"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/wood_townhouse",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/forest_lodge",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          8,
+          7
+        ],
+        "Solid": [
+          "........",
+          "........",
+          "........",
+          "........",
+          "........",
+          "########",
+          "########"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/forest_lodge",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/desert_house",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          8,
+          7
+        ],
+        "Solid": [
+          "........",
+          "........",
+          "........",
+          "........",
+          "........",
+          "########",
+          "########"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/desert_house",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/desert_inn",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          10,
+          8
+        ],
+        "Solid": [
+          "..........",
+          "..........",
+          "..........",
+          "..........",
+          "..........",
+          "..........",
+          "##########",
+          "##########"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/desert_inn",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/snow_cabin",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          8,
+          7
+        ],
+        "Solid": [
+          "........",
+          "........",
+          "........",
+          "........",
+          "........",
+          "########",
+          "########"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/snow_cabin",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/snow_lodge",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          10,
+          8
+        ],
+        "Solid": [
+          "..........",
+          "..........",
+          "..........",
+          "..........",
+          "..........",
+          "..........",
+          "##########",
+          "##########"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/snow_lodge",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/log_hut_snowy",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          6,
+          5
+        ],
+        "Solid": [
+          "......",
+          "......",
+          "..##..",
+          ".####.",
+          "..##.."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/log_hut_snowy",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/cottage",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          6,
+          5
+        ],
+        "Solid": [
+          "...#..",
+          "......",
+          "..##..",
+          ".####.",
+          "..##.."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/cottage",
+          "Geometry": "upright"
+        }
+      ],
+      "Lights": [
+        {
+          "Radius": 2.2,
+          "Color": "#ffd594b0",
+          "At": [
+            1.5,
+            3.5
+          ]
+        },
+        {
+          "Radius": 2.2,
+          "Color": "#ffd594b0",
+          "At": [
+            4.5,
+            3.5
+          ]
+        },
+        {
+          "Radius": 2.2,
+          "Color": "#ffd594b0",
+          "At": [
+            1.5,
+            4.5
+          ]
+        },
+        {
+          "Radius": 2.2,
+          "Color": "#ffd594b0",
+          "At": [
+            4.5,
+            4.5
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/building/shrine_arch",
+      "Form": "sprite",
+      "Category": "building",
+      "Footprint": {
+        "Size": [
+          4,
+          4
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "....",
+          "...."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "building/shrine_arch",
+          "Geometry": "upright"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/vegetation/palm",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          3,
+          4
+        ],
+        "Solid": [
+          "...",
+          "...",
+          "...",
+          ".#."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/palm",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/cactus",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          3
+        ],
+        "Solid": [
+          "..",
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/cactus",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/desert_scrub",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/desert_scrub",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/spruce_snowy",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          3,
+          4
+        ],
+        "Solid": [
+          "...",
+          "...",
+          "...",
+          ".#."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/spruce_snowy",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/shrub_frosted",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/shrub_frosted",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/dead_tree_snowy",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          3
+        ],
+        "Solid": [
+          "..",
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/dead_tree_snowy",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/oak",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          4,
+          4
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "....",
+          ".#.."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/oak",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/oak_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/oak_bare",
+              "Geometry": "upright"
+            }
+          ],
+          "Footprint": {
+            "Solid": [
+              "....",
+              "....",
+              "....",
+              "..#."
+            ]
+          }
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/oak_winter",
+              "Geometry": "upright"
+            }
+          ],
+          "Footprint": {
+            "Solid": [
+              "....",
+              "....",
+              "....",
+              "..#."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/spruce",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          4,
+          4
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "....",
+          ".#.."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/spruce",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/spruce_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/spruce_bare",
+              "Geometry": "upright"
+            }
+          ],
+          "Footprint": {
+            "Solid": [
+              "....",
+              "....",
+              "....",
+              "..#."
+            ]
+          }
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/spruce_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/birch",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          4,
+          4
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "....",
+          "..#."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/birch",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/birch_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/birch_bare",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/birch_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/willow",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          4,
+          4
+        ],
+        "Solid": [
+          "....",
+          "....",
+          ".##.",
+          ".##."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/willow",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/willow_autumn",
+              "Geometry": "upright"
+            }
+          ],
+          "Footprint": {
+            "Solid": [
+              "....",
+              "....",
+              "....",
+              ".#.."
+            ]
+          }
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/willow_bare",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/willow_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/maple",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          4,
+          4
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "....",
+          ".#.."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/maple",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/maple_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/maple_bare",
+              "Geometry": "upright"
+            }
+          ],
+          "Footprint": {
+            "Solid": [
+              "....",
+              "....",
+              "....",
+              "..#."
+            ]
+          }
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/maple_winter",
+              "Geometry": "upright"
+            }
+          ],
+          "Footprint": {
+            "Solid": [
+              "....",
+              "....",
+              "....",
+              "..#."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/pine",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          4,
+          4
+        ],
+        "Solid": [
+          "....",
+          "....",
+          "....",
+          "..#."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/pine",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/pine_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/pine_bare",
+              "Geometry": "upright"
+            }
+          ],
+          "Footprint": {
+            "Solid": [
+              "....",
+              "....",
+              "....",
+              ".#.."
+            ]
+          }
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/pine_winter",
+              "Geometry": "upright"
+            }
+          ],
+          "Footprint": {
+            "Solid": [
+              "....",
+              "....",
+              "....",
+              ".#.."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/stump_cut",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/stump_cut",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/stump_cut_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/stump_cut_bare",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/stump_cut_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/stump_hollow",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/stump_hollow",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/stump_hollow_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/stump_hollow_bare",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/stump_hollow_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/shrub_round",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/shrub_round",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/shrub_round_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/shrub_round_bare",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/shrub_round_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/shrub_berry",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          "##"
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/shrub_berry",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/shrub_berry_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/shrub_berry_bare",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/shrub_berry_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/flowers_daisy",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          ".."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/flowers_daisy",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/flowers_daisy_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/flowers_daisy_bare",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/flowers_daisy_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/flowers_violet",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          2,
+          2
+        ],
+        "Solid": [
+          "..",
+          ".."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/flowers_violet",
+          "Geometry": "upright"
+        }
+      ],
+      "Variants": {
+        "autumn": {
+          "Parts": [
+            {
+              "Image": "vegetation/flowers_violet_autumn",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "bare": {
+          "Parts": [
+            {
+              "Image": "vegetation/flowers_violet_bare",
+              "Geometry": "upright"
+            }
+          ]
+        },
+        "winter": {
+          "Parts": [
+            {
+              "Image": "vegetation/flowers_violet_winter",
+              "Geometry": "upright"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "village_pack/vegetation/oak_small",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Footprint": {
+        "Size": [
+          3,
+          3
+        ],
+        "Solid": [
+          "...",
+          "...",
+          ".#."
+        ]
+      },
+      "Parts": [
+        {
+          "Image": "vegetation/oak_small",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/bush",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Parts": [
+        {
+          "Image": "vegetation/bush",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/tall_grass",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Solid": false,
+      "Parts": [
+        {
+          "Image": "vegetation/tall_grass",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/stump_small",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Parts": [
+        {
+          "Image": "vegetation/stump_small",
+          "Geometry": "upright"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/vegetation/mushroom",
+      "Form": "sprite",
+      "Category": "vegetation",
+      "Solid": false,
+      "Parts": [
+        {
+          "Image": "vegetation/mushroom",
+          "Geometry": "upright"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Snow enemy integration",
+  "description": "Loads all four snow enemies, drives actual battles and checks persistent defeat in both renderers.",
+  "sources": [
+    "src/*.cs"
+  ],
+  "depends": [
+    "rpg_plus_game>=1",
+    "ff_battle>=1"
+  ]
+}

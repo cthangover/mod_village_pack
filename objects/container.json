@@ -1,0 +1,74 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/container/barrel",
+      "Name": "village_pack/object/barrel/name",
+      "Form": "sprite",
+      "Category": "container",
+      "Extends": "village_pack/decor/barrel",
+      "Interact": {
+        "Trigger": "Use",
+        "Commands": [
+          "flag self.open 1",
+          "ptext \"You open the barrel.\" key=village_pack/object/barrel/open"
+        ]
+      },
+      "States": [
+        {
+          "Id": "open",
+          "When": "self.open == 1",
+          "Parts": [
+            {
+              "Image": "container/barrel_open",
+              "Geometry": "upright"
+            }
+          ],
+          "Interact": {
+            "Trigger": "Use",
+            "Commands": [
+              "ptext \"The barrel is empty.\" key=village_pack/object/barrel/empty"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/chest",
+      "Name": "village_pack/object/chest/name",
+      "Form": "sprite",
+      "Category": "container",
+      "Parts": [
+        {
+          "Image": "container/chest_closed",
+          "Geometry": "upright"
+        }
+      ],
+      "Interact": {
+        "Trigger": "Use",
+        "Commands": [
+          "flag self.open 1",
+          "ptext \"You open the chest.\" key=village_pack/object/chest/open"
+        ]
+      },
+      "States": [
+        {
+          "Id": "open",
+          "When": "self.open == 1",
+          "Parts": [
+            {
+              "Image": "container/chest_open",
+              "Geometry": "upright"
+            }
+          ],
+          "Interact": {
+            "Trigger": "Use",
+            "Commands": [
+              "ptext \"The chest is empty.\" key=village_pack/object/chest/empty"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

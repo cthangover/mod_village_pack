@@ -1,0 +1,23 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/npc/elder",
+      "Form": "actor",
+      "Category": "npc",
+      "Charset": "village/elder"
+    },
+    {
+      "Id": "village_pack/npc/villager",
+      "Form": "actor",
+      "Category": "npc",
+      "Charset": "village/villager"
+    },
+    {
+      "Id": "village_pack/npc/merchant",
+      "Form": "actor",
+      "Category": "npc",
+      "Charset": "village/merchant"
+    }
+  ]
+}

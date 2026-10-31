@@ -1,0 +1,1920 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/interior/wood_home_room",
+      "Form": "sprite",
+      "Category": "interior",
+      "Footprint": {
+        "Size": [
+          12,
+          10
+        ],
+        "Solid": [
+          "############",
+          "############",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#####..#####"
+        ]
+      },
+      "Parts": [
+        {
+          "Id": "whole",
+          "Image": "interior/wood_home_room",
+          "Geometry": "ground",
+          "Only": "topdown"
+        },
+        {
+          "Id": "plane_0",
+          "Image": "interior/wood_home_room",
+          "Crop": [
+            32,
+            64,
+            320,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_1",
+          "Image": "interior/wood_home_room",
+          "Crop": [
+            0,
+            0,
+            384,
+            64
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_2",
+          "Image": "interior/wood_home_room",
+          "Crop": [
+            0,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              1
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_3",
+          "Image": "interior/wood_home_room",
+          "Crop": [
+            352,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              1
+            ],
+            [
+              11,
+              9,
+              1
+            ],
+            [
+              11,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_4",
+          "Image": "interior/wood_home_room",
+          "Crop": [
+            0,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_5",
+          "Image": "interior/wood_home_room",
+          "Crop": [
+            224,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              7,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_6",
+          "Image": "interior/wood_home_room",
+          "Crop": [
+            160,
+            288,
+            64,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ],
+            [
+              7,
+              10,
+              0
+            ],
+            [
+              5,
+              10,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/interior/forest_hall_room",
+      "Form": "sprite",
+      "Category": "interior",
+      "Footprint": {
+        "Size": [
+          12,
+          10
+        ],
+        "Solid": [
+          "############",
+          "############",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#####..#####"
+        ]
+      },
+      "Parts": [
+        {
+          "Id": "whole",
+          "Image": "interior/forest_hall_room",
+          "Geometry": "ground",
+          "Only": "topdown"
+        },
+        {
+          "Id": "plane_0",
+          "Image": "interior/forest_hall_room",
+          "Crop": [
+            32,
+            64,
+            320,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_1",
+          "Image": "interior/forest_hall_room",
+          "Crop": [
+            0,
+            0,
+            384,
+            64
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_2",
+          "Image": "interior/forest_hall_room",
+          "Crop": [
+            0,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              1
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_3",
+          "Image": "interior/forest_hall_room",
+          "Crop": [
+            352,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              1
+            ],
+            [
+              11,
+              9,
+              1
+            ],
+            [
+              11,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_4",
+          "Image": "interior/forest_hall_room",
+          "Crop": [
+            0,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_5",
+          "Image": "interior/forest_hall_room",
+          "Crop": [
+            224,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              7,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_6",
+          "Image": "interior/forest_hall_room",
+          "Crop": [
+            160,
+            288,
+            64,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ],
+            [
+              7,
+              10,
+              0
+            ],
+            [
+              5,
+              10,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/interior/desert_home_room",
+      "Form": "sprite",
+      "Category": "interior",
+      "Footprint": {
+        "Size": [
+          12,
+          10
+        ],
+        "Solid": [
+          "############",
+          "############",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#####..#####"
+        ]
+      },
+      "Parts": [
+        {
+          "Id": "whole",
+          "Image": "interior/desert_home_room",
+          "Geometry": "ground",
+          "Only": "topdown"
+        },
+        {
+          "Id": "plane_0",
+          "Image": "interior/desert_home_room",
+          "Crop": [
+            32,
+            64,
+            320,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_1",
+          "Image": "interior/desert_home_room",
+          "Crop": [
+            0,
+            0,
+            384,
+            64
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_2",
+          "Image": "interior/desert_home_room",
+          "Crop": [
+            0,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              1
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_3",
+          "Image": "interior/desert_home_room",
+          "Crop": [
+            352,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              1
+            ],
+            [
+              11,
+              9,
+              1
+            ],
+            [
+              11,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_4",
+          "Image": "interior/desert_home_room",
+          "Crop": [
+            0,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_5",
+          "Image": "interior/desert_home_room",
+          "Crop": [
+            224,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              7,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_6",
+          "Image": "interior/desert_home_room",
+          "Crop": [
+            160,
+            288,
+            64,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ],
+            [
+              7,
+              10,
+              0
+            ],
+            [
+              5,
+              10,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/interior/desert_inn_room",
+      "Form": "sprite",
+      "Category": "interior",
+      "Footprint": {
+        "Size": [
+          12,
+          10
+        ],
+        "Solid": [
+          "############",
+          "############",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#####..#####"
+        ]
+      },
+      "Parts": [
+        {
+          "Id": "whole",
+          "Image": "interior/desert_inn_room",
+          "Geometry": "ground",
+          "Only": "topdown"
+        },
+        {
+          "Id": "plane_0",
+          "Image": "interior/desert_inn_room",
+          "Crop": [
+            32,
+            64,
+            320,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_1",
+          "Image": "interior/desert_inn_room",
+          "Crop": [
+            0,
+            0,
+            384,
+            64
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_2",
+          "Image": "interior/desert_inn_room",
+          "Crop": [
+            0,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              1
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_3",
+          "Image": "interior/desert_inn_room",
+          "Crop": [
+            352,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              1
+            ],
+            [
+              11,
+              9,
+              1
+            ],
+            [
+              11,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_4",
+          "Image": "interior/desert_inn_room",
+          "Crop": [
+            0,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_5",
+          "Image": "interior/desert_inn_room",
+          "Crop": [
+            224,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              7,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_6",
+          "Image": "interior/desert_inn_room",
+          "Crop": [
+            160,
+            288,
+            64,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ],
+            [
+              7,
+              10,
+              0
+            ],
+            [
+              5,
+              10,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/interior/snow_home_room",
+      "Form": "sprite",
+      "Category": "interior",
+      "Footprint": {
+        "Size": [
+          12,
+          10
+        ],
+        "Solid": [
+          "############",
+          "############",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#####..#####"
+        ]
+      },
+      "Parts": [
+        {
+          "Id": "whole",
+          "Image": "interior/snow_home_room",
+          "Geometry": "ground",
+          "Only": "topdown"
+        },
+        {
+          "Id": "plane_0",
+          "Image": "interior/snow_home_room",
+          "Crop": [
+            32,
+            64,
+            320,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_1",
+          "Image": "interior/snow_home_room",
+          "Crop": [
+            0,
+            0,
+            384,
+            64
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_2",
+          "Image": "interior/snow_home_room",
+          "Crop": [
+            0,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              1
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_3",
+          "Image": "interior/snow_home_room",
+          "Crop": [
+            352,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              1
+            ],
+            [
+              11,
+              9,
+              1
+            ],
+            [
+              11,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_4",
+          "Image": "interior/snow_home_room",
+          "Crop": [
+            0,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_5",
+          "Image": "interior/snow_home_room",
+          "Crop": [
+            224,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              7,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_6",
+          "Image": "interior/snow_home_room",
+          "Crop": [
+            160,
+            288,
+            64,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ],
+            [
+              7,
+              10,
+              0
+            ],
+            [
+              5,
+              10,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/interior/snow_lodge_room",
+      "Form": "sprite",
+      "Category": "interior",
+      "Footprint": {
+        "Size": [
+          12,
+          10
+        ],
+        "Solid": [
+          "############",
+          "############",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#####..#####"
+        ]
+      },
+      "Parts": [
+        {
+          "Id": "whole",
+          "Image": "interior/snow_lodge_room",
+          "Geometry": "ground",
+          "Only": "topdown"
+        },
+        {
+          "Id": "plane_0",
+          "Image": "interior/snow_lodge_room",
+          "Crop": [
+            32,
+            64,
+            320,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_1",
+          "Image": "interior/snow_lodge_room",
+          "Crop": [
+            0,
+            0,
+            384,
+            64
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_2",
+          "Image": "interior/snow_lodge_room",
+          "Crop": [
+            0,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              1
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_3",
+          "Image": "interior/snow_lodge_room",
+          "Crop": [
+            352,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              1
+            ],
+            [
+              11,
+              9,
+              1
+            ],
+            [
+              11,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_4",
+          "Image": "interior/snow_lodge_room",
+          "Crop": [
+            0,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_5",
+          "Image": "interior/snow_lodge_room",
+          "Crop": [
+            224,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              7,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_6",
+          "Image": "interior/snow_lodge_room",
+          "Crop": [
+            160,
+            288,
+            64,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ],
+            [
+              7,
+              10,
+              0
+            ],
+            [
+              5,
+              10,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        }
+      ]
+    },
+    {
+      "Id": "village_pack/interior/cottage_room",
+      "Form": "sprite",
+      "Category": "interior",
+      "Footprint": {
+        "Size": [
+          12,
+          10
+        ],
+        "Solid": [
+          "############",
+          "############",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "#..........#",
+          "######.#####"
+        ]
+      },
+      "Parts": [
+        {
+          "Id": "whole",
+          "Image": "interior/cottage_room",
+          "Geometry": "ground",
+          "Only": "topdown"
+        },
+        {
+          "Id": "plane_0",
+          "Image": "interior/cottage_room",
+          "Crop": [
+            32,
+            64,
+            320,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_1",
+          "Image": "interior/cottage_room",
+          "Crop": [
+            0,
+            0,
+            384,
+            64
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              2
+            ],
+            [
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_2",
+          "Image": "interior/cottage_room",
+          "Crop": [
+            0,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              9,
+              0
+            ],
+            [
+              1,
+              9,
+              1
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_3",
+          "Image": "interior/cottage_room",
+          "Crop": [
+            352,
+            64,
+            32,
+            224
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              11,
+              2,
+              0
+            ],
+            [
+              11,
+              2,
+              1
+            ],
+            [
+              11,
+              9,
+              1
+            ],
+            [
+              11,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_4",
+          "Image": "interior/cottage_room",
+          "Crop": [
+            0,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              0,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0.6
+            ],
+            [
+              5,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        },
+        {
+          "Id": "plane_5",
+          "Image": "interior/cottage_room",
+          "Crop": [
+            224,
+            288,
+            160,
+            32
+          ],
+          "Geometry": "quad",
+          "Points": [
+            [
+              7,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0.6
+            ],
+            [
+              12,
+              9,
+              0
+            ],
+            [
+              7,
+              9,
+              0
+            ]
+          ],
+          "Only": "isometric",
+          "DrawOrder": "BelowCharacters"
+        }
+      ],
+      "Lights": [
+        {
+          "Radius": 1.8,
+          "Color": "#ffd27acc",
+          "At": [
+            3.5,
+            1.5
+          ]
+        },
+        {
+          "Radius": 1.8,
+          "Color": "#ffd27acc",
+          "At": [
+            8.5,
+            1.5
+          ]
+        }
+      ]
+    }
+  ]
+}

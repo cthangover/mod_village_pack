@@ -1,8 +1,8 @@
 # Village Pack — RPG 图块地图与战斗美术
 
-Village Pack 是 RPG Plus 世界背后的美术包：用来绘制地图的图块集、英雄、村民和怪物的行走图、战斗立绘和战斗背景。所有素材都采用同一种绘画风 2.5D 风格，用它搭出来的地图看起来是同一个世界。
+可复用的 RPG 美术与对象：九套图块、行走精灵、战斗图像、一次性容器，以及可编辑的林地、雪、尘埃和雨配置。
 
-它**只有美术**。可以行走的村庄、长老之家、森林和沙漠，是 RPG Demo 与 RPG Plus 内容模组里的地图和事件；行走、碰撞和战斗则是 RPG 引擎的事。Village Pack 提供它们所用的图片。
+素材包包含可复用的图像、对象模板和环境配置。游戏地图、任务和奖励属于 `rpg_plus_game`。
 
 ![夜晚的村庄地图，用 village 图块集绘制：小屋、铺着石板的广场和路灯、树木、池塘，以及用包内行走图绘制的村民。](assets/village-map.jpg)
 
@@ -30,12 +30,12 @@ Village Pack 是 RPG Plus 世界背后的美术包：用来绘制地图的图块
 
 ![同一批植被的四季，从左到右：夏、秋、光秃枝干和冬。](assets/vegetation.jpg)
 
-一张地图只能用一个图块集，目前没有任何自带地图使用植被图块集。它们是给地图作者备好的素材。
+地图使用一套主地表图块，并可通过 `Tilesets` 借用其他图块集的对象。沙漠以西的白色山口（`rpg_winter`）使用 `snow`，并借用 `vegetation_winter` 和 `village`。
 
 ### 沙漠与雪地
 
 - `desert`：沙地和岩石表面加沙漠物件——土坯建筑、集市遮阳篷、棕榈、仙人掌和干草。RPG Plus 的沙漠地图 Dry March 就是用它画的。
-- `snow`：新雪、冰面和两种可踩出脚印的路面（`packed_snow` 和踩得更深的 `trampled_snow`），还有小屋、马车、水井、岩石、灌木和积雪的云杉。目前没有自带地图使用它。
+- `snow`: 地图使用一套主地表图块，并可通过 `Tilesets` 借用其他图块集的对象。沙漠以西的白色山口（`rpg_winter`）使用 `snow`，并借用 `vegetation_winter` 和 `village`。
 
 ![四种雪地表面：新雪、冰面、带浅浅脚印的踩实雪地和深深踩烂的雪地。](assets/snow_surfaces.png)
 
@@ -106,7 +106,7 @@ Village Pack 属于 `rpg_plus` 游戏。在那个游戏里：
 
 ## 限制与替换
 
-- 一张地图一个图块集。同一张地图上不能混用 village 图块集和植被图块集。
+- 地图使用一套主地表图块，并可通过 `Tilesets` 借用其他图块集的对象。沙漠以西的白色山口（`rpg_winter`）使用 `snow`，并借用 `vegetation_winter` 和 `village`。
 - 美术自带烘焙好的光照和透视。它按 2.5D 视角绘制；等距渲染器复用同一批图片，因此特别高的物件会保持绘制时的角度。
 - 想为自己的游戏替换某张图，在自己模组里放一个相对名称相同的文件并声明依赖 `village_pack` 即可。后加载的依赖方胜出。
 - 最初的生成图、提示词和可编辑源文件都归档在游戏之外；模组里只有运行时图片和图块集定义。
@@ -116,3 +116,27 @@ Village Pack 属于 `rpg_plus` 游戏。在那个游戏里：
 1. 地图缺地面或缺物件，多半是 `Tileset` 名称拼写错误或缺少依赖。
 2. 角色看不见：检查 `Sprite` 名称，以及行走图表是否为 3 × 4 帧。
 3. 战斗背景是纯色：地图场景没有设置 `defaultBackground`。
+
+## 可复用对象与环境
+
+在地图编辑器的**对象**中放置 `chest` 或 `village_pack/barrel`。每个实例都有独立的开启状态、空容器提示和开启图像。模板不绑定货币或奖励，请在对象编辑器中设置。源文本为英语，七种语言使用本地化键。
+
+在地图环境字段中选择 `woodland`、`winter_snow`、`desert_dust` 或 `rain`。复制 `atmospheres/weather.json` 的配置并使用新 Id，即可调整粒子数量、颜色、尺寸、高度和速度。列表包含所有已加载模组的配置。Effects Engine 支持扩展发射器类型，无需修改渲染器。
+
+![Winter: top-down](assets/winter_topdown.png)
+
+![Winter: isometric](assets/winter_isometric.png)
+
+## 雪地敌人
+
+资源包包含白狼、海象、北极熊和雪人，提供七种语言的名称、战斗立绘以及透明背景的3 × 4行走图。ID依次为 `village_pack/white_wolf`、`village_pack/walrus`、`village_pack/polar_bear`、`village_pack/yeti`。
+
+它们在白色山口（`rpg_winter`）巡逻。靠近后按E/F进入战斗；胜利后对应敌人消失，存档会保留该状态。它们使用攻击和防御，无法招募。游戏可通过角色补丁设置掉落物。生命/攻击/防御/经验值依次为24/5/0/14、32/5/2/20、40/7/1/28和48/8/1/36。
+
+## 扩展聚落与共用内景
+
+`habitat_objects`和`habitat_interiors`新增22个资源：六种建筑外观、六种室内、七种户外摆件和三种家具。村庄与森林使用木构民居，沙漠使用土坯房与商旅客栈，雪地使用木屋与山间旅舍。普通投影和等距投影共用同一批PNG。每间12 × 10房间的地板、墙面和南侧两格门槛通过`IsoPlanes`映射，家具单独摆放。
+
+共有七栋可进入建筑。村庄扩展至64 × 42、森林60 × 42、沙漠72 × 48、雪地72 × 52、圣域48 × 36；原有事件和传送点坐标保持不变。门事件位于本资源包，地图和室内场景位于`rpg_plus_game`。
+
+![New building facades, shared interiors, outdoor props and furniture](assets/biome_expansion.jpg)

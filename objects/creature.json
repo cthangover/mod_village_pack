@@ -1,0 +1,29 @@
+{
+  "Kind": "rpg_object",
+  "Items": [
+    {
+      "Id": "village_pack/creature/wolf",
+      "Form": "actor",
+      "Category": "creature",
+      "Charset": "village/wolf"
+    },
+    {
+      "Id": "village_pack/creature/slime",
+      "Form": "actor",
+      "Category": "creature",
+      "Charset": "village/slime"
+    },
+    {
+      "Id": "village_pack/creature/scorpion",
+      "Form": "actor",
+      "Category": "creature",
+      "Charset": "desert/scorpion"
+    },
+    {
+      "Id": "village_pack/creature/beetle",
+      "Form": "actor",
+      "Category": "creature",
+      "Charset": "desert/beetle"
+    }
+  ]
+}
