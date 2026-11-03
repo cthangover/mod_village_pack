@@ -47,8 +47,30 @@
         },
         {
           "Type": "ripples",
-          "Count": 20,
+          "Shape": "flake",
+          "Count": 5,
+          "Seed": 1,
           "Color": "#a1ded626",
+          "Velocity": [
+            0.03,
+            0.02,
+            -0.4
+          ],
+          "Height": [
+            0.1,
+            5
+          ],
+          "Size": [
+            0.7,
+            1.5
+          ],
+          "Sway": 0.2,
+          "Pulse": 0,
+          "Trail": 0.2,
+          "CycleSeconds": 3.333333,
+          "RadiusMin": 0.08,
+          "RadiusMax": 0.38,
+          "Segments": 12,
           "Region": "water"
         }
       ],

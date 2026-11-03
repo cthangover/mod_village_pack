@@ -18,7 +18,7 @@ namespace Cthangover.Mods.VillagePack.Tests
         private static readonly string[] Exteriors = { "rpg_village", "rpg_village", "rpg_forest", "rpg_desert", "rpg_desert", "rpg_winter", "rpg_winter" };
         private static readonly string[] Buildings = { "wood_townhouse", "forest_lodge", "forest_lodge", "desert_house", "desert_inn", "snow_cabin", "snow_lodge" };
         private static readonly string[] Rooms = { "wood_home_room", "forest_hall_room", "forest_hall_room", "desert_home_room", "desert_inn_room", "snow_home_room", "snow_lodge_room" };
-        private static readonly Vector2I[] Doors = { new(41,11),new(54,11),new(38,12),new(49,12),new(62,12),new(49,12),new(62,12) };
+        private static readonly Vector2I[] Doors = { new(37,11),new(52,32),new(38,12),new(49,12),new(62,12),new(49,12),new(62,12) };
         private readonly string shots;
         private int stage, index, ticks, passed, failed;
         private double elapsed;
