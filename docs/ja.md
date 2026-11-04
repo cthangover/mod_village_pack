@@ -1,142 +1,68 @@
-# Village Pack — RPG マップとバトルのアート
+# Village Pack — 再利用できる RPG オブジェクトと画像
 
-再利用できる RPG 素材とオブジェクト。9種のタイルセット、歩行スプライト、戦闘画像、一度だけ開く容器、編集可能な森林・雪・砂塵・雨のプロファイル。
+Village Pack は `rpg_object` 定義、`rpg_images/` の個別 PNG、歩行画像、戦闘画像、雪国の敵、環境プロファイルを提供します。依存先は `rpg` と `effects_base`。マップ、物語、配置、報酬は RPG Plus が提供します。
 
-パックは共通の画像、オブジェクトのテンプレート、環境プロファイルを提供します。ゲームのマップ、クエスト、報酬は `rpg_plus_game` にあります。
+## 物体と季節
 
-![village タイルセットで描かれた夜の村のマップ：コテージ、街灯のある石畳の広場、木々、池、そしてパックのキャラチップで描かれた村人たち。](assets/village-map.jpg)
+地表には草、石畳、土、床、森の道、砂、岩地、オアシスの水と泥、雪、氷があります。建物、室内、家具、容器、植物、照明、NPC は `objects/*.json` の通常のオブジェクトです。複数のパックの物体を同じマップに使えます。
 
-## 収録内容
+季節の植物は同じ物体の `Variants` を使います。`village_pack/vegetation/oak` には `autumn`、`bare`、`winter` があり、基本は夏です。マップまたは配置で指定します。現行モデルは `Legend`、`Ground`、`Structure` と `rpg_placement` を使い、タイルセットのパレット、数値タイル ID、画像アトラスは使いません。
 
-### village タイルセット
+## 利用する
 
-デモ世界のすべてのマップが `village` タイルセットを使います。二つの部分からなります。
-
-オブジェクトはセルに置かれます：コテージ、祠のアーチ、洞窟の入り口、木々、茂み、井戸、焚き火、街灯、柵、看板、樽、宝箱（閉じた状態と開いた状態）、作業台、そして薪・石・キノコのような拾える物。一番上にはコテージの内装——長老の家が使う、1枚の 12 × 10 の部屋画像があります。
-
-![村のオブジェクトアトラス：上部にコテージの内装、その下にコテージ・祠のアーチ・洞窟・オーク、下部に小物が並ぶ。](assets/village_objects.jpg)
-
-サーフェスは領域全体を埋めるシームレスな地面テクスチャです：草、石畳の道、土、明るい石の床、木の床、岩の多い森の小道、水。
-
-![村の7つのサーフェス：草、石畳、土、明るい石、木板、岩の小道、水。](assets/village_surfaces.jpg)
-
-いくつかのタイルには RPG エンジン用の追加プロパティがあります：水は通行不可、街灯と窓は光源を持ち、夕暮れや夜にマップ上で光ります。
-
-![コテージの内装画像で作られた長老の家が、夜は2つの窓から明かりをともす。](assets/elder-house.jpg)
-
-### 季節の植生
-
-4つの植生タイルセットは、同じ木々・茂み・切り株・花を、夏、秋、葉のない晩秋、雪の冬で表現します：オーク、トウヒ、シラカバ、ヤナギ、カエデ、マツ、丸い茂みとベリーの茂み、切り株と洞のある切り株、ヒナギクとスミレ。
-
-![同じ植生を四季で、左から順に：夏、秋、裸の枝、冬。](assets/vegetation.jpg)
-
-地面には1つの主タイルセットを使い、`Tilesets` で他のセットのオブジェクトを借りられます。砂漠の西にある白い峠（`rpg_winter`）は `snow` と `vegetation_winter`、`village` を使います。
-
-### 砂漠と雪
-
-- `desert`：砂と岩のサーフェスに、砂漠のオブジェクト——日干しレンガの建物、市場の日除け、ヤシ、サボテン、枯れ草——が付きます。RPG Plus の砂漠マップ Dry March はこれで描かれています。
-- `snow`: 地面には1つの主タイルセットを使い、`Tilesets` で他のセットのオブジェクトを借りられます。砂漠の西にある白い峠（`rpg_winter`）は `snow` と `vegetation_winter`、`village` を使います。
-
-![4つの雪のサーフェス：新雪、氷、浅い足跡のついた踏み固めた雪、深く踏み荒らされた雪。](assets/snow_surfaces.png)
-
-![desert タイルセットで描かれた砂漠マップ：砂、岩の道、日除け、ヤシ、サボテン、サソリ、甲虫。](assets/desert-map.jpg)
-
-### キャラチップ：歩行スプライト
-
-各キャラチップは 3 × 4 枚のシートです：4方向（下・左・右・上）それぞれに歩行3フレーム。村のセットには主人公、長老、村人、商人、スライム、狼がいます。砂漠のセットにはサソリ、甲虫、そして閉じた状態と開いた状態の樽が加わります。
-
-![村のキャラチップ：主人公、長老、村人、商人、スライム、狼。それぞれ4行の向きを持つ。](assets/charsets.png)
-
-### バトル肖像と背景
-
-大きな肖像は戦闘中の戦い手を示します：主人公、スライム、狼、そして砂漠のサソリと甲虫。
-
-![バトル肖像：剣と盾を持つ主人公、スライム、狼、サソリ、甲虫。](assets/portraits.jpg)
-
-草原・森・砂漠の前哨の3枚の背景が、マップ上で始まった戦闘の背景として使われます。草原と森にはライティングシステム用の `_depth` が付いています。
-
-![バトル背景：草原、森、砂漠の前哨。](assets/backdrops.jpg)
-
-![スライムとの戦闘：上部にスライムの肖像、左下に主人公の肖像、夜の草原背景を背に。](assets/battle.jpg)
-
-## どこで見られるか
-
-Village Pack は `rpg_plus` ゲームの一部です。そのゲームでは：
-
-- 村、長老の家、森、森の祠は `village` タイルセットで描かれ、
-- 砂漠マップは `desert` を使い、
-- 長老・商人・村人・狼・スライム・サソリ・甲虫がパックのキャラチップでマップを歩き、
-- 戦闘では肖像が表示され、マップのシーンは `village/meadow`、`village/forest`、`desert/outpost` を戦闘背景にします。
-
-タイルマップエディターは、選択したタイルセットをパレットとして表示します。これは長老の家を開いたところ：コテージの内装、オブジェクト、サーフェスの見本が village タイルセットです。
-
-![長老の家を開いた RPG マップエディター。左のパレットは village タイルセット、右のマッププロパティには「Tileset: village」と表示されている。](assets/map-editor-palette.jpg)
-
-## 自分の RPG コンテンツで使う
-
-1. 自分のゲームのコレクションに `village_pack` を含めます。エンジン MOD `rpg` が必要です。
-2. そのアートを使うコンテンツ MOD の `depends` リストに `village_pack>=1` を追加します。
-3. アートは名前で参照します：
-
-```jsonc
-// マップ：マップ全体で1つのタイルセット
-{ "Kind": "rpg_map", "Items": [ { "Id": "my_glade", "Tileset": "village" /* … */ } ] }
-```
-
-```jsonc
-// キャラチップで描かれたマップイベント
-{ "Id": "old_man", "X": 5, "Y": 3, "Sprite": "village/elder" }
-```
-
-```jsonc
-// キャラクターのバトル肖像
-{ "Id": "my_wolf", "Image": "characters/village/wolf" }
-```
+ゲームに `village_pack` を含め、コンテンツ MOD の依存に `village_pack>=1` を加えます。マップエディタで地表、セグメント、スプライト、アクターから選択します。最小マップ `maps/my_glade.json`：
 
 ```json
 {
-  "name": "my_glade",
-  "defaultBackground": "village/meadow"
+  "Kind": "rpg_map",
+  "Items": [{
+    "Id": "my_glade", "Width": 4, "Height": 3,
+    "Legend": {"g": "village_pack/ground/grass"},
+    "Ground": ["gggg", "gggg", "gggg"],
+    "Spawn": {"X": 0, "Y": 0, "Dir": "Down"}
+  }]
 }
 ```
 
-タイルセットの名前は `village`、`vegetation_summer`、`vegetation_autumn`、`vegetation_bare`、`vegetation_winter`、`desert`、`snow` です。キャラチップは `village/<name>` と `desert/<name>`、バトル背景は `village/meadow`、`village/forest`、`desert/outpost` です。
+`placements/my_glade/props.json` に置く樽：
 
-いちばん簡単な描き方は RPG マップエディターです。マップのタイルセットに `village` を選べば、タイル番号を打ち込む代わりにパレットで描けます。
+```json
+{
+  "Kind": "rpg_placement",
+  "Items": [{
+    "Id": "my_glade/barrel", "Object": "village_pack/container/barrel",
+    "X": 1, "Y": 1
+  }]
+}
+```
 
-## 制限と差し替え
+`my_glade` というシーンと `Charset` を持つリーダーも必要です。画像名は `rpg_images/` からの相対名（例：`ground/grass`）で、`.png` は省きます。物体 ID、画像名、歩行画像名は別のキーです。
 
-- 地面には1つの主タイルセットを使い、`Tilesets` で他のセットのオブジェクトを借りられます。砂漠の西にある白い峠（`rpg_winter`）は `snow` と `vegetation_winter`、`village` を使います。
-- アートには光と遠近が焼き込まれています。2.5D の見た目のために描かれており、アイソメトリックレンダラーも同じ絵を再利用するため、非常に高いオブジェクトは描かれた角度を保ちます。
-- 自分のゲーム向けに絵を差し替えるには、同じ相対名のファイルを自分の MOD に置き、`village_pack` に依存します。後から読み込まれる依存側が勝ちます。
-- 元の生成画像・プロンプト・編集可能なソースはゲームの外にアーカイブされています。MOD に入っているのは実行用の絵とタイルセット定義だけです。
+## 容器と室内
 
-## 表示がおかしいとき
+共通の容器は `village_pack/chest` と `village_pack/container/barrel` です。コマンドが `self.open` を立て、開いた状態が画像と操作を変えます。テンプレートに報酬はありません。自分の物体や配置に報酬を足し、開いたフラグと状態を保って重複取得を防ぎます。
 
-1. 地面やオブジェクトのないマップは、たいてい `Tileset` 名の打ち間違いか依存関係の欠落です。
-2. キャラクターが見えない：`Sprite` 名と、キャラチップのシートが 3 × 4 フレームかを確認してください。
-3. 戦闘の背景が無地：マップのシーンに `defaultBackground` がありません。
+共通の 6 室とコテージの部屋はオブジェクトです。`Footprint` が衝突を定め、`Parts` がトップダウンの全体画像と、`Only` で `isometric` に限定した `quad` の切り抜きを使います。共通の 6 室は 12 × 10 マスで南側に 2 マスの開口があります。移動先と室内シーンはゲーム側で定義します。
 
-## 共通オブジェクトと環境
+## 歩行と戦闘
 
-マップエディターの**オブジェクト**から `chest` または `village_pack/barrel` を置きます。開封状態、空のメッセージ、開いた画像は各インスタンスで独立します。通貨や報酬はエディターで設定します。原文は英語、7言語はローカライズキーを使います。
+歩行画像は 3 列 × 4 行（下、左、右、上）、中央列が静止です。キャラクターやアクターの `Charset` に `village/hero`、`village/villager`、`snow/white_wolf` などを指定します。戦闘絵は `Image`（例：`characters/village/wolf`）。背景は `village/meadow`、`village/forest`、`desert/outpost` です。
 
-環境欄で `woodland`、`winter_snow`、`desert_dust`、`rain` を選びます。`atmospheres/weather.json` のプロファイルを新しい Id で複製し、粒子数・色・大きさ・高さ・速度を変更できます。全MODのプロファイルが一覧に出ます。Effects Engine で新しいエミッターを追加でき、レンダラーの変更は不要です。
+雪国の敵は `characters/snow/enemies.json` にあります。下の XP は戦闘報酬計算前の `Exp` です：
 
-![Winter: top-down](assets/winter_topdown.png)
+- `village_pack/white_wolf`: Lv 2 · HP 24 · DEF 0 · ATK 5 · XP 14.
+- `village_pack/walrus`: Lv 3 · HP 32 · DEF 2 · ATK 5 · XP 20.
+- `village_pack/polar_bear`: Lv 4 · HP 40 · DEF 1 · ATK 7 · XP 28.
+- `village_pack/yeti`: Lv 5 · HP 48 · DEF 1 · ATK 8 · XP 36.
 
-![Winter: isometric](assets/winter_isometric.png)
+全員 AP 1、勧誘確率 0、戦利品なしです。狼の歩行フレームは 48 × 48、ほかは 64 × 64 ピクセル。RPG Plus が `placements/rpg_winter/snow_enemies.json` に巡回を配置し、勝利フラグを定義します。
 
-## 雪原の敵
+## 環境と置き換え
 
-白狼、セイウチ、ホッキョクグマ、イエティを収録。名前は7言語に対応し、戦闘用画像と透過背景の3 × 4歩行シートを備えます。IDは順に `village_pack/white_wolf`、`village_pack/walrus`、`village_pack/polar_bear`、`village_pack/yeti` です。
+`woodland`、`winter_snow`、`desert_dust`、`rain` は `atmospheres/weather.json` にあります。マップの `Atmosphere` で選ぶか、マップエディタの効果ツールでマスクを塗ります。再生は Effects Engine、編集は Effects Editor が担当します。
 
-白い峠（`rpg_winter`）を巡回します。近づいてE/Fで戦闘し、勝利すると倒した個体が消え、セーブ後も状態が維持されます。攻撃と防御を使用し、仲間にはできません。戦利品はゲーム側のパッチで設定できます。HP/攻撃/防御/経験値は順に24/5/0/14、32/5/2/20、40/7/1/28、48/8/1/36です。
+所有元に依存する MOD で、同じ種類と ID のエンティティや同名の画像を提供すると置き換えられます。個別の項目にはパッチを使います。生成元画像と編集可能な素材はリポジトリ外に保管します。
 
-## 拡張された集落と共通内装
+![RPG Plus の冬の画像、等角投影](assets/winter_isometric.png)
 
-`habitat_objects`と`habitat_interiors`に22素材を追加しました。外観6種、内装6種、屋外小物7種、家具3種です。村と森には木造住宅、砂漠には日干しレンガの家と隊商宿、雪原には小屋と山荘を配置。同じPNGを通常表示とアイソメトリック表示で使用します。12 × 10の各部屋は床・壁・2マス幅の南側出入口を`IsoPlanes`で対応づけ、家具は独立しています。
-
-7棟に出入りできます。村64 × 42、森60 × 42、砂漠72 × 48、雪原72 × 52、聖域48 × 36に拡張し、既存イベントと移動先は元の座標を維持しています。扉イベントは本パック、マップと内装シーンは`rpg_plus_game`にあります。
-
-![New building facades, shared interiors, outdoor props and furniture](assets/biome_expansion.jpg)
+物体がない場合は `Object`、画像キー、依存関係を確認します。通れない場合は `Footprint.Solid` とマップの衝突を調べます。歩行には `Charset`、戦闘背景にはマップシーンの `defaultBackground` が必要です。

@@ -3,7 +3,7 @@
   "name": "Village Pack",
   "version": "1.0.0",
   "author": "ct",
-  "description": "Reusable RPG art: nine tilesets, walking sprites, battle artwork, snow enemies, six shared architectural interiors, reusable containers and editable atmosphere profiles.",
+  "description": "Reusable RPG objects and individual images: surfaces, vegetation, buildings, shared interiors, containers, walking sprites, battle artwork, snow enemies and editable atmosphere profiles.",
   "category": "visual, characters",
   "depends": [
     "rpg>=1",
