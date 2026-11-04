@@ -74,7 +74,9 @@ namespace Cthangover.Mods.VillagePack.Tests
                     var door=View.Find(Exteriors[index]+"/rpg_plus_enter_"+Buildings[index]);
                     Check(door?.Current.Interact?.Teleport?.Map==RoomId, "facade door names its own interior: " + RoomId);
                     activeDoor=door.Actor.Cell;
-                    Check(View.CanEnter(activeDoor), "entrance overrides the facade footprint");
+                    var canEnter = View.CanEnter(activeDoor);
+                    Check(canEnter, "entrance overrides the facade footprint");
+                    if (!canEnter) { Finish(); return; }
                     View.PlacePlayer(activeDoor.X,activeDoor.Y+1,RpgDirection.Up);
                     VerifyScene(false);
                     Shot(Exteriors[index]+"_"+Buildings[index]);
