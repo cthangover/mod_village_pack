@@ -2,5 +2,5 @@
   "name": "Biome architecture integration",
   "description": "Expanded outdoor maps, shared architectural texture planes, furniture collision and real building door round trips in both projections.",
   "sources": ["src/*.cs"],
-  "depends": ["rpg_plus_game>=1"]
+  "depends": ["rpg_plus_game>=0.1.0"]
 }
