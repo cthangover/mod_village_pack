@@ -20,14 +20,16 @@ namespace Cthangover.Mods.VillagePack.Tests
         private static readonly string[] Rooms = { "wood_home_room", "forest_hall_room", "forest_hall_room", "desert_home_room", "desert_inn_room", "snow_home_room", "snow_lodge_room" };
         private static readonly Vector2I[] Doors = { new(37,11),new(52,32),new(38,12),new(49,12),new(62,12),new(49,12),new(62,12) };
         private readonly string shots;
-        private int stage, index, ticks, passed, failed;
+        private int stage, index, passed, failed;
         private double elapsed;
+        private ulong waitStarted, readyFrame;
         private Key? release;
         private Vector2I activeDoor;
         private static RpgWorldView View => RpgWorldHost.Current?.View;
         private static DialogBox Box => RpgInput.FindDialogBox();
         private string RoomId => "rpg_plus_" + Exteriors[index].Substring(4) + "_" + Buildings[index];
 
+        /// <summary>Waits for a mounted, idle map and two actual frames before checking geometry or capturing.</summary>
         public BiomeExpansionDriver(string shots)
         {
             this.shots = shots;
@@ -59,7 +61,8 @@ namespace Cthangover.Mods.VillagePack.Tests
                 if (Box.IsWaitingAnswer) Box.TrySelectVariant(0); else Box.NextAction();
                 return;
             }
-            if (GodotSceneService.IsTransitioning || ++ticks < 8) return;
+            if (GodotSceneService.IsTransitioning) return;
+            if (!MapIsReady()) return;
             switch (stage)
             {
                 case 0:
@@ -94,8 +97,23 @@ namespace Cthangover.Mods.VillagePack.Tests
                     Check(View.Player.Cell==activeDoor+Vector2I.Down, "real exit returns to the correct building instance");
                     index++;
                     if(index==Buildings.Length) { Finish(); return; }
-                    stage=1;ticks=0;return;
+                    stage=1;return;
             }
+        }
+
+        private bool MapIsReady()
+        {
+            var expected = stage == 3 ? RoomId : stage is 2 or 4 ? Exteriors[index] : null;
+            var ready = View?.Map != null && (expected == null || View.Map.ID == expected) && !View.Player.IsMoving;
+            var now = Time.GetTicksMsec();
+            if (waitStarted == 0) waitStarted = now;
+            if (now - waitStarted > 15000)
+                throw new TimeoutException($"map readiness at stage {stage}/{index}, expected '{expected}'");
+            if (!ready) { readyFrame = 0; return false; }
+            if (readyFrame == 0) readyFrame = Engine.GetProcessFrames();
+            if (Engine.GetProcessFrames() - readyFrame < 2) return false;
+            waitStarted = readyFrame = 0;
+            return true;
         }
 
         private void VerifyCatalog()
@@ -154,7 +172,7 @@ namespace Cthangover.Mods.VillagePack.Tests
         {
             Input.ParseInputEvent(new InputEventKey { PhysicalKeycode=key,Keycode=key,Pressed=true });release=key;
         }
-        private void Next() { stage++;ticks=0; }
+        private void Next() { stage++; }
         private void Shot(string name)
         {
             if(string.IsNullOrEmpty(shots)||DisplayServer.GetName()=="headless")return;

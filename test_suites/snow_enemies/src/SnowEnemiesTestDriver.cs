@@ -23,18 +23,24 @@ namespace Cthangover.Mods.VillagePack.Tests
     {
         private const string Slot = "slot_9936";
         private readonly string shots;
-        private int step, ticks, passed, failed;
+        private int step, passed, failed;
         private double elapsed;
-        private ulong nextAttack;
+        private ulong attackReadyFrame;
+        private ulong stageReadyFrame;
+        private ulong stageWaitStarted;
+        private int waitingStep = -1;
+        private readonly double tickSeconds;
         private BattleSceneContext testedBattle;
         private static RpgWorldView View => RpgWorldHost.Current?.View;
         private static DialogBox Box => RpgInput.FindDialogBox();
 
+        /// <summary>Waits on map/UI readiness; screenshot runs keep their normal input polling rate.</summary>
         public SnowEnemiesTestDriver(string shots)
         {
             this.shots = shots;
+            tickSeconds = string.IsNullOrEmpty(shots) ? 0.05 : 0.1;
             Name = "SnowEnemiesTestDriver";
-            var timer = new Timer { WaitTime = 0.1, Autostart = true };
+            var timer = new Timer { WaitTime = tickSeconds, Autostart = true };
             timer.Timeout += Tick;
             AddChild(timer);
         }
@@ -42,7 +48,7 @@ namespace Cthangover.Mods.VillagePack.Tests
         private void Tick()
         {
             if (step < 0) return;
-            elapsed += 0.1;
+            elapsed += tickSeconds;
             if (elapsed > 180) { Check(false, $"timeout at step {step}"); Finish(); return; }
             try { RunStep(); }
             catch (Exception ex) { Check(false, ex.ToString()); Finish(); }
@@ -62,7 +68,7 @@ namespace Cthangover.Mods.VillagePack.Tests
                 if (Box.IsWaitingAnswer) Box.TrySelectVariant(0); else Box.NextAction();
                 return;
             }
-            if (GodotSceneService.IsTransitioning || ++ticks < 3) return;
+            if (!StageIsReady()) return;
             switch (step)
             {
                 case 0:
@@ -71,7 +77,7 @@ namespace Cthangover.Mods.VillagePack.Tests
                     Next(); return;
                 case 1:
                     if (View?.Map.ID != "rpg_winter") return;
-                    VerifyEnemies(); Shot("snow_enemies_overview"); step = 10; ticks = 0; return;
+                    VerifyEnemies(); Shot("snow_enemies_overview"); step = 10; stageReadyFrame = 0; return;
                 case 10:
                     if (View?.Map.ID != "rpg_winter") return;
                     var actor = View.Find("rpg_winter/village_pack_winter_" + EnemyNames[enemyIndex]);
@@ -93,7 +99,7 @@ namespace Cthangover.Mods.VillagePack.Tests
                     Check(View.Find("rpg_winter/village_pack_winter_" + EnemyNames[enemyIndex])?.Visible == false,
                         "victory removes only the defeated enemy: " + EnemyNames[enemyIndex]);
                     enemyIndex++;
-                    if (enemyIndex < EnemyNames.Length) { step = 10; ticks = 0; return; }
+                    if (enemyIndex < EnemyNames.Length) { step = 10; stageReadyFrame = 0; return; }
                     SaveService.Save(Slot);
                     Check(GameSession.LoadAndEnter(this, Slot), "defeated snow enemies can be saved and loaded");
                     Next(); return;
@@ -134,11 +140,47 @@ namespace Cthangover.Mods.VillagePack.Tests
             Check(View.CanEnter(new Vector2I(38,14)) && View.CanEnter(new Vector2I(39,14)), "snow enemies preserve the entrance and exit");
         }
 
+        // Stage state, rather than a timer budget, releases the unchanged assertions.
+        private bool StageIsReady()
+        {
+            var now = Time.GetTicksMsec();
+            if (waitingStep != step)
+            {
+                waitingStep = step;
+                stageWaitStarted = now;
+                stageReadyFrame = 0;
+            }
+            if (now - stageWaitStarted > 30000)
+                throw new TimeoutException($"readiness at stage {step}, map '{View?.Map.ID}'");
+            if (GodotSceneService.IsTransitioning) { stageReadyFrame = 0; return false; }
+            var expected = step switch
+            {
+                0 => "rpg_village",
+                1 or 10 or 13 or 14 => "rpg_winter",
+                _ => null
+            };
+            var ready = expected == null
+                ? GetTree().CurrentScene is BattleSceneContext || View?.Map != null
+                : View?.Map.ID == expected && !View.Player.IsMoving;
+
+            if (!ready) { stageReadyFrame = 0; return false; }
+            if (stageReadyFrame == 0) stageReadyFrame = Engine.GetProcessFrames();
+            return Engine.GetProcessFrames() - stageReadyFrame >= 2;
+        }
+
         private bool Win(string id)
         {
             if (GetTree().CurrentScene is not BattleSceneContext battle) return false;
             if (battle.IsDestroyed) return true;
-            if (battle.ActiveBattleCore is not IBattleAutoPlayable auto || !auto.IsWaitingForPlayerInput || Time.GetTicksMsec() < nextAttack) return false;
+            if (battle.ActiveBattleCore is not IBattleAutoPlayable auto || !auto.IsWaitingForPlayerInput) { attackReadyFrame = 0; return false; }
+            var controller = battle.FindChild("FFBattleController", true, false) as FFBattleController;
+            if (controller == null || controller.State is not (FFBattleState.Idle or FFBattleState.MenuOpen))
+            {
+                attackReadyFrame = 0;
+                return false;
+            }
+            if (attackReadyFrame == 0) attackReadyFrame = Engine.GetProcessFrames();
+            if (Engine.GetProcessFrames() - attackReadyFrame < 2) return false;
             var enemies = battle.FindChild("FFEnemyPanel", true, false) as FFEnemyPanel;
             var players = battle.FindChild("FFPlayerPanel", true, false) as FFPlayerPanel;
             var menu = battle.FindChildren("*", "", true, false).OfType<FFMenuPanel>().FirstOrDefault();
@@ -166,7 +208,7 @@ namespace Cthangover.Mods.VillagePack.Tests
                 if (menu.Entries[i].Data is Cthangover.Core.Characters.ActionCharacter action &&
                     action.Type == Cthangover.Core.Characters.ActionCharacterType.ToEnemy)
                 { menu.SelectedIndex = i; break; }
-            menu.ConfirmSelection(); Click(target); nextAttack = Time.GetTicksMsec() + 1600;
+            menu.ConfirmSelection(); Click(target); attackReadyFrame = 0;
             return false;
         }
 
@@ -182,7 +224,7 @@ namespace Cthangover.Mods.VillagePack.Tests
             DirAccess.MakeDirRecursiveAbsolute(shots);
             ViewportCapture.SavePng(GetViewport(), shots.TrimEnd('/') + "/" + name + ".png");
         }
-        private void Next() { step++; ticks = 0; }
+        private void Next() { step++; stageReadyFrame = 0; }
         private void Check(bool ok, string message)
         {
             if (ok) passed++; else failed++;
