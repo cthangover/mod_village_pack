@@ -10,7 +10,7 @@ La vegetación estacional usa `Variants` de un objeto: `village_pack/vegetation/
 
 ## Usar el paquete
 
-Incluye `village_pack` en el juego y añade `village_pack>=1` a las dependencias del mod de contenido. En RPG Map Editor elige superficies, segmentos, sprites o actores. Archivo mínimo `maps/my_glade.json`:
+Incluye `village_pack` en el juego y añade `village_pack>=0.1.0` a las dependencias del mod de contenido. En RPG Map Editor elige superficies, segmentos, sprites o actores. Archivo mínimo `maps/my_glade.json`:
 
 ```json
 {

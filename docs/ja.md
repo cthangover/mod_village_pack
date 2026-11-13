@@ -10,7 +10,7 @@ Village Pack は `rpg_object` 定義、`rpg_images/` の個別 PNG、歩行画�
 
 ## 利用する
 
-ゲームに `village_pack` を含め、コンテンツ MOD の依存に `village_pack>=1` を加えます。マップエディタで地表、セグメント、スプライト、アクターから選択します。最小マップ `maps/my_glade.json`：
+ゲームに `village_pack` を含め、コンテンツ MOD の依存に `village_pack>=0.1.0` を加えます。マップエディタで地表、セグメント、スプライト、アクターから選択します。最小マップ `maps/my_glade.json`：
 
 ```json
 {

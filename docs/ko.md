@@ -10,7 +10,7 @@ Village Pack은 `rpg_object` 정의, `rpg_images/`의 개별 PNG, 걷기 시트,
 
 ## 사용하기
 
-게임에 `village_pack`을 포함하고 콘텐츠 모드 의존성에 `village_pack>=1`을 추가하세요. 맵 편집기의 지면, 세그먼트, 스프라이트, 액터 탭에서 고릅니다. 최소 맵 파일 `maps/my_glade.json`:
+게임에 `village_pack`을 포함하고 콘텐츠 모드 의존성에 `village_pack>=0.1.0`을 추가하세요. 맵 편집기의 지면, 세그먼트, 스프라이트, 액터 탭에서 고릅니다. 최소 맵 파일 `maps/my_glade.json`:
 
 ```json
 {

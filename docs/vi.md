@@ -10,7 +10,7 @@ Cây theo mùa dùng `Variants` của cùng vật thể: `village_pack/vegetatio
 
 ## Sử dụng gói
 
-Đưa `village_pack` vào game và thêm `village_pack>=1` vào phụ thuộc mod nội dung. Trong trình sửa bản đồ chọn bề mặt, đoạn, sprite hoặc actor. Tệp bản đồ tối thiểu `maps/my_glade.json`:
+Đưa `village_pack` vào game và thêm `village_pack>=0.1.0` vào phụ thuộc mod nội dung. Trong trình sửa bản đồ chọn bề mặt, đoạn, sprite hoặc actor. Tệp bản đồ tối thiểu `maps/my_glade.json`:
 
 ```json
 {

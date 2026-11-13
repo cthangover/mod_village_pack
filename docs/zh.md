@@ -10,7 +10,7 @@ Village Pack 提供 `rpg_object` 定义、`rpg_images/` 中的独立 PNG、行�
 
 ## 使用方法
 
-将 `village_pack` 纳入游戏，并在内容模组依赖中加入 `village_pack>=1`。在 RPG 地图编辑器的地表、线段、精灵或角色页选择物件。最小地图文件 `maps/my_glade.json`：
+将 `village_pack` 纳入游戏，并在内容模组依赖中加入 `village_pack>=0.1.0`。在 RPG 地图编辑器的地表、线段、精灵或角色页选择物件。最小地图文件 `maps/my_glade.json`：
 
 ```json
 {

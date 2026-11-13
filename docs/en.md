@@ -10,7 +10,7 @@ Seasonal vegetation uses one object with `Variants`: for example `village_pack/v
 
 ## Use the pack
 
-Include `village_pack` in the game and add `village_pack>=1` to the content mod’s dependencies. In RPG Map Editor choose an object from Surfaces, Segments, Sprites or Actors. A minimal map file `maps/my_glade.json`:
+Include `village_pack` in the game and add `village_pack>=0.1.0` to the content mod’s dependencies. In RPG Map Editor choose an object from Surfaces, Segments, Sprites or Actors. A minimal map file `maps/my_glade.json`:
 
 ```json
 {
