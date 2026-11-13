@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "ct",
   "description": "Reusable RPG objects and individual images: surfaces, vegetation, buildings, shared interiors, containers, walking sprites, battle artwork, snow enemies and editable atmosphere profiles.",
-  "category": "visual, characters",
+  "categories": ["visual", "characters"],
   "depends": [
     "rpg>=0.1.0",
     "effects_base>=0.1.0"
