@@ -164,8 +164,8 @@ namespace Cthangover.Mods.VillagePack.Tests
                 : View?.Map.ID == expected && !View.Player.IsMoving;
 
             if (!ready) { stageReadyFrame = 0; return false; }
-            if (stageReadyFrame == 0) stageReadyFrame = Engine.GetProcessFrames();
-            return Engine.GetProcessFrames() - stageReadyFrame >= 2;
+            if (stageReadyFrame == 0) stageReadyFrame = Godot.Engine.GetProcessFrames();
+            return Godot.Engine.GetProcessFrames() - stageReadyFrame >= 2;
         }
 
         private bool Win(string id)
@@ -179,8 +179,8 @@ namespace Cthangover.Mods.VillagePack.Tests
                 attackReadyFrame = 0;
                 return false;
             }
-            if (attackReadyFrame == 0) attackReadyFrame = Engine.GetProcessFrames();
-            if (Engine.GetProcessFrames() - attackReadyFrame < 2) return false;
+            if (attackReadyFrame == 0) attackReadyFrame = Godot.Engine.GetProcessFrames();
+            if (Godot.Engine.GetProcessFrames() - attackReadyFrame < 2) return false;
             var enemies = battle.FindChild("FFEnemyPanel", true, false) as FFEnemyPanel;
             var players = battle.FindChild("FFPlayerPanel", true, false) as FFPlayerPanel;
             var menu = battle.FindChildren("*", "", true, false).OfType<FFMenuPanel>().FirstOrDefault();

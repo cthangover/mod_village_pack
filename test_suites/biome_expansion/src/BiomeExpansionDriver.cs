@@ -110,8 +110,8 @@ namespace Cthangover.Mods.VillagePack.Tests
             if (now - waitStarted > 15000)
                 throw new TimeoutException($"map readiness at stage {stage}/{index}, expected '{expected}'");
             if (!ready) { readyFrame = 0; return false; }
-            if (readyFrame == 0) readyFrame = Engine.GetProcessFrames();
-            if (Engine.GetProcessFrames() - readyFrame < 2) return false;
+            if (readyFrame == 0) readyFrame = Godot.Engine.GetProcessFrames();
+            if (Godot.Engine.GetProcessFrames() - readyFrame < 2) return false;
             waitStarted = readyFrame = 0;
             return true;
         }
